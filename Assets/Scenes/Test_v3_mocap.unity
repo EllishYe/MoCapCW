@@ -361,10 +361,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Figure01
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fec0136d3f45f734997cd24826d857a4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: fec0136d3f45f734997cd24826d857a4, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 217791b260ec7e94db3d948382735f49, type: 2}
+      objectReference: {fileID: 9100000, guid: 36637c426a8eaad4db530c044429b62e, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8797,7 +8801,7 @@ PrefabInstance:
     - target: {fileID: 5866666021909216657, guid: fec0136d3f45f734997cd24826d857a4, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 6a46bf7e26fa05e4dac04f15c41c8522, type: 2}
+      objectReference: {fileID: 9100000, guid: cbdab7e988a66bd42bf351cf49f7ea09, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
