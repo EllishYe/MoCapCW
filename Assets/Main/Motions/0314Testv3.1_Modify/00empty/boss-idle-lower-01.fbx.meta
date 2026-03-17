@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 88ab5271f6fb0c8468cae8fc839932d7
+guid: 99628451128a6014ca117b35cdb2a176
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
@@ -41,8 +41,8 @@ ModelImporter:
       name: boss-idle
       takeName: boss-idle
       internalID: -7907887299409428194
-      firstFrame: 779
-      lastFrame: 1545
+      firstFrame: 100
+      lastFrame: 450
       wrapMode: 0
       orientationOffsetY: 180
       level: 0

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 88ab5271f6fb0c8468cae8fc839932d7
+guid: afd87734e2350414bacf15a65c3fdfc2
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
@@ -19,12 +19,10 @@ ModelImporter:
     animationImportErrors: 
     animationImportWarnings: "\nClip 'boss-idle' has import animation warnings that
       might lower retargeting quality:\nNote: Activate translation DOF on avatar
-      to improve retargeting quality.\n\t'2c002_Spine1' has translation animation
-      that will be discarded.\n\t'2c002_Spine1' is inbetween humanoid transforms
-      and has rotation animation that will be discarded.\n\t'2c002_Head' has translation
-      animation that will be discarded.\n\t'2c002_LeftHand' has translation animation
-      that will be discarded.\n\t'2c002_RightHand' has translation animation that
-      will be discarded.\n"
+      to improve retargeting quality.\n\t'2c001_Spine1' has translation animation
+      that will be discarded.\n\t'2c001_LeftHand' has translation animation that
+      will be discarded.\n\t'2c001_RightHand' has translation animation that will
+      be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
@@ -41,8 +39,8 @@ ModelImporter:
       name: boss-idle
       takeName: boss-idle
       internalID: -7907887299409428194
-      firstFrame: 779
-      lastFrame: 1545
+      firstFrame: 100
+      lastFrame: 450
       wrapMode: 0
       orientationOffsetY: 180
       level: 0
@@ -119,7 +117,7 @@ ModelImporter:
   humanDescription:
     serializedVersion: 3
     human:
-    - boneName: 2c002_Hips
+    - boneName: 2c001_Hips
       humanName: Hips
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -127,7 +125,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: 2c002_LeftUpLeg
+    - boneName: 2c001_LeftUpLeg
       humanName: LeftUpperLeg
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -135,7 +133,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: 2c002_RightUpLeg
+    - boneName: 2c001_RightUpLeg
       humanName: RightUpperLeg
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -143,7 +141,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: 2c002_LeftLeg
+    - boneName: 2c001_LeftLeg
       humanName: LeftLowerLeg
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -151,7 +149,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: 2c002_RightLeg
+    - boneName: 2c001_RightLeg
       humanName: RightLowerLeg
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -159,7 +157,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: 2c002_LeftFoot
+    - boneName: 2c001_LeftFoot
       humanName: LeftFoot
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -167,7 +165,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: 2c002_RightFoot
+    - boneName: 2c001_RightFoot
       humanName: RightFoot
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -175,7 +173,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: 2c002_Spine
+    - boneName: 2c001_Spine
       humanName: Spine
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -183,7 +181,15 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: 2c002_Neck
+    - boneName: 2c001_Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: 2c001_Neck
       humanName: Neck
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -191,7 +197,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: 2c002_Head
+    - boneName: 2c001_Head
       humanName: Head
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -199,7 +205,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: 2c002_LeftShoulder
+    - boneName: 2c001_LeftShoulder
       humanName: LeftShoulder
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -207,7 +213,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: 2c002_RightShoulder
+    - boneName: 2c001_RightShoulder
       humanName: RightShoulder
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -215,7 +221,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: 2c002_LeftArm
+    - boneName: 2c001_LeftArm
       humanName: LeftUpperArm
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -223,7 +229,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: 2c002_RightArm
+    - boneName: 2c001_RightArm
       humanName: RightUpperArm
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -231,7 +237,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: 2c002_LeftForeArm
+    - boneName: 2c001_LeftForeArm
       humanName: LeftLowerArm
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -239,7 +245,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: 2c002_RightForeArm
+    - boneName: 2c001_RightForeArm
       humanName: RightLowerArm
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -247,7 +253,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: 2c002_LeftHand
+    - boneName: 2c001_LeftHand
       humanName: LeftHand
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -255,7 +261,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: 2c002_RightHand
+    - boneName: 2c001_RightHand
       humanName: RightHand
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -263,7 +269,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: 2c002_LeftToeBase
+    - boneName: 2c001_LeftToeBase
       humanName: LeftToes
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -271,7 +277,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: 2c002_RightToeBase
+    - boneName: 2c001_RightToeBase
       humanName: RightToes
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -280,114 +286,114 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: boss-idle-lower-01(Clone)
+    - name: boss-idle-upper-01(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: 2c002_Hips
-      parentName: boss-idle-lower-01(Clone)
-      position: {x: -0.0057150307, y: 0.92465496, z: 0}
-      rotation: {x: -0.005034607, y: 0.009236686, z: 0.00081451924, w: 0.9999444}
+    - name: 2c001_Hips
+      parentName: boss-idle-upper-01(Clone)
+      position: {x: 0.008421179, y: 0.90130615, z: 0}
+      rotation: {x: 0.09744075, y: 0.005015474, z: 0.015801642, w: 0.9951033}
       scale: {x: 1, y: 1, z: 1}
-    - name: 2c002_Spine
-      parentName: 2c002_Hips
-      position: {x: -0, y: 0.076846555, z: 0}
-      rotation: {x: -0.047857765, y: -0.017189018, z: 0.0034826137, w: 0.9987002}
+    - name: 2c001_Spine
+      parentName: 2c001_Hips
+      position: {x: -0, y: 0.074757665, z: 0}
+      rotation: {x: -0.1297203, y: 0.0063330396, z: 0.0043904562, w: 0.9915207}
       scale: {x: 1, y: 1, z: 1}
-    - name: 2c002_Spine1
-      parentName: 2c002_Spine
-      position: {x: 0.00000033527613, y: 0.16182582, z: 0.0000030100346}
-      rotation: {x: -0.048517577, y: -0.0057370407, z: -0.0045716753, w: 0.9987954}
+    - name: 2c001_Spine1
+      parentName: 2c001_Spine
+      position: {x: -0.0000006239861, y: 0.18708092, z: 0.0000027120113}
+      rotation: {x: 0.022113482, y: 0.0020908609, z: -0.048205663, w: 0.99859047}
       scale: {x: 1, y: 1, z: 1}
-    - name: 2c002_Neck
-      parentName: 2c002_Spine1
-      position: {x: -0, y: 0.17690986, z: 0}
-      rotation: {x: 0.28086674, y: 0.01290013, z: -0.0047153677, w: 0.95964855}
+    - name: 2c001_Neck
+      parentName: 2c001_Spine1
+      position: {x: -0, y: 0.20494859, z: 0}
+      rotation: {x: 0.18559454, y: 0.0075485823, z: 0.11171175, w: 0.9762265}
       scale: {x: 1, y: 1, z: 1}
-    - name: 2c002_Head
-      parentName: 2c002_Neck
-      position: {x: -0.00000008381903, y: 0.13967639, z: 0.018018484}
-      rotation: {x: 0.037002094, y: 0.021267673, z: -0.06658542, w: 0.99686754}
+    - name: 2c001_Head
+      parentName: 2c001_Neck
+      position: {x: -0, y: 0.14131021, z: 0.018233575}
+      rotation: {x: -0.013875603, y: 0.03555775, z: -0.10115648, w: 0.99413806}
       scale: {x: 1, y: 1, z: 1}
-    - name: 2c002_LeftShoulder
-      parentName: 2c002_Spine1
-      position: {x: -0.03783512, y: 0.13109422, z: -0.0069708824}
-      rotation: {x: -0.0010418816, y: 0.06311041, z: -0.13946399, w: 0.9882134}
+    - name: 2c001_LeftShoulder
+      parentName: 2c001_Spine1
+      position: {x: -0.0363629, y: 0.16231853, z: -0.0036080182}
+      rotation: {x: 0.006230258, y: 0.0043571135, z: -0.12353863, w: 0.99231064}
       scale: {x: 1, y: 1, z: 1}
-    - name: 2c002_LeftArm
-      parentName: 2c002_LeftShoulder
-      position: {x: -0.14155492, y: 0, z: 0}
-      rotation: {x: -0.0403569, y: -0.042517915, z: 0.11005416, w: 0.99219537}
+    - name: 2c001_LeftArm
+      parentName: 2c001_LeftShoulder
+      position: {x: -0.12988769, y: 0, z: 0}
+      rotation: {x: -0.10268988, y: 0.006680912, z: 0.15226379, w: 0.9829679}
       scale: {x: 1, y: 1, z: 1}
-    - name: 2c002_LeftForeArm
-      parentName: 2c002_LeftArm
-      position: {x: -0.24961641, y: 0, z: 0}
-      rotation: {x: 0.08759335, y: -0.05021752, z: 0.023383027, w: 0.9946149}
+    - name: 2c001_LeftForeArm
+      parentName: 2c001_LeftArm
+      position: {x: -0.25572273, y: 0, z: 0}
+      rotation: {x: 0.043229625, y: -0.008935963, z: 0.021995157, w: 0.9987831}
       scale: {x: 1, y: 1, z: 1}
-    - name: 2c002_LeftHand
-      parentName: 2c002_LeftForeArm
-      position: {x: -0.19568887, y: -0.0000022649765, z: 0.0000047385693}
-      rotation: {x: 0.08881946, y: 0.0024643329, z: 0.03452183, w: 0.99544626}
+    - name: 2c001_LeftHand
+      parentName: 2c001_LeftForeArm
+      position: {x: -0.24681494, y: 0.000004887581, z: 0.000004351139}
+      rotation: {x: 0.04151626, y: 0.050812036, z: -0.08291646, w: 0.994394}
       scale: {x: 1, y: 1, z: 1}
-    - name: 2c002_RightShoulder
-      parentName: 2c002_Spine1
-      position: {x: 0.037130088, y: 0.13109422, z: -0.0069708824}
-      rotation: {x: 0.00049823575, y: -0.0507176, z: 0.13982941, w: 0.98887575}
+    - name: 2c001_RightShoulder
+      parentName: 2c001_Spine1
+      position: {x: 0.036569737, y: 0.16231853, z: -0.0036080182}
+      rotation: {x: -0.012667786, y: -0.039424397, z: 0.1271929, w: 0.9910132}
       scale: {x: 1, y: 1, z: 1}
-    - name: 2c002_RightArm
-      parentName: 2c002_RightShoulder
-      position: {x: 0.14155492, y: 0, z: 0}
-      rotation: {x: -0.029163966, y: 0.046442147, z: -0.10362468, w: 0.99310344}
+    - name: 2c001_RightArm
+      parentName: 2c001_RightShoulder
+      position: {x: 0.12988769, y: 0, z: 0}
+      rotation: {x: 0.019350601, y: -0.005735612, z: -0.11240908, w: 0.9934571}
       scale: {x: 1, y: 1, z: 1}
-    - name: 2c002_RightForeArm
-      parentName: 2c002_RightArm
-      position: {x: 0.24961641, y: 0, z: 0}
-      rotation: {x: 0.05450391, y: 0.052705236, z: -0.0077348165, w: 0.9970916}
+    - name: 2c001_RightForeArm
+      parentName: 2c001_RightArm
+      position: {x: 0.25572273, y: 0, z: 0}
+      rotation: {x: 0.000032663334, y: -0.0037438609, z: -0.004661697, w: 0.9999821}
       scale: {x: 1, y: 1, z: 1}
-    - name: 2c002_RightHand
-      parentName: 2c002_RightForeArm
-      position: {x: 0.1939438, y: 0.0000046491623, z: 0.0000024735928}
-      rotation: {x: 0.055380195, y: 0.0057822987, z: -0.06516476, w: 0.99631983}
+    - name: 2c001_RightHand
+      parentName: 2c001_RightForeArm
+      position: {x: 0.22265457, y: 0.000005722046, z: 0.0000009536743}
+      rotation: {x: 0.000059466336, y: 0.0095230555, z: -0.004297241, w: 0.99994546}
       scale: {x: 1, y: 1, z: 1}
-    - name: 2c002_LeftUpLeg
-      parentName: 2c002_Hips
-      position: {x: -0.0937153, y: 0, z: 0}
-      rotation: {x: -0.09703668, y: -0.13554344, z: -0.033010583, w: 0.98545533}
+    - name: 2c001_LeftUpLeg
+      parentName: 2c001_Hips
+      position: {x: -0.091167875, y: 0, z: 0}
+      rotation: {x: -0.026605465, y: -0.05917759, z: -0.044288903, w: 0.99690956}
       scale: {x: 1, y: 1, z: 1}
-    - name: 2c002_LeftLeg
-      parentName: 2c002_LeftUpLeg
-      position: {x: -0, y: -0.47682884, z: 0}
-      rotation: {x: 0.30718985, y: 0.21872154, z: 0.047798943, w: 0.9249382}
+    - name: 2c001_LeftLeg
+      parentName: 2c001_LeftUpLeg
+      position: {x: -0, y: -0.4253639, z: 0}
+      rotation: {x: -0.012610289, y: -0.00070528063, z: 0.02068664, w: 0.99970627}
       scale: {x: 1, y: 1, z: 1}
-    - name: 2c002_LeftFoot
-      parentName: 2c002_LeftLeg
-      position: {x: -0, y: -0.37817317, z: 0}
-      rotation: {x: -0.11937755, y: -0.18865207, z: 0.051772617, w: 0.9733854}
+    - name: 2c001_LeftFoot
+      parentName: 2c001_LeftLeg
+      position: {x: -0, y: -0.39095917, z: 0}
+      rotation: {x: -0.030174056, y: 0.12725872, z: 0.020101141, w: 0.9912067}
       scale: {x: 1, y: 1, z: 1}
-    - name: 2c002_LeftToeBase
-      parentName: 2c002_LeftFoot
-      position: {x: -0, y: -0.06091495, z: 0.14057297}
+    - name: 2c001_LeftToeBase
+      parentName: 2c001_LeftFoot
+      position: {x: -0, y: -0.059259117, z: 0.13675183}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: 2c002_RightUpLeg
-      parentName: 2c002_Hips
-      position: {x: 0.0937153, y: 0, z: 0}
-      rotation: {x: -0.096824795, y: 0.08322311, z: 0.026726572, w: 0.99145585}
+    - name: 2c001_RightUpLeg
+      parentName: 2c001_Hips
+      position: {x: 0.091167875, y: 0, z: 0}
+      rotation: {x: -0.036133014, y: -0.0071132183, z: 0.036821127, w: 0.9986431}
       scale: {x: 1, y: 1, z: 1}
-    - name: 2c002_RightLeg
-      parentName: 2c002_RightUpLeg
-      position: {x: -0, y: -0.47682884, z: 0}
-      rotation: {x: 0.3137685, y: -0.10251219, z: -0.01154837, w: 0.94387877}
+    - name: 2c001_RightLeg
+      parentName: 2c001_RightUpLeg
+      position: {x: -0, y: -0.4253639, z: 0}
+      rotation: {x: 0.014041164, y: -0.024309304, z: -0.020777086, w: 0.99938995}
       scale: {x: 1, y: 1, z: 1}
-    - name: 2c002_RightFoot
-      parentName: 2c002_RightLeg
-      position: {x: -0, y: -0.37817317, z: 0}
-      rotation: {x: -0.11737108, y: 0.024406804, z: -0.049198534, w: 0.9915683}
+    - name: 2c001_RightFoot
+      parentName: 2c001_RightLeg
+      position: {x: -0, y: -0.39095917, z: 0}
+      rotation: {x: -0.036427528, y: 0.019999905, z: 0.0078011984, w: 0.9991057}
       scale: {x: 1, y: 1, z: 1}
-    - name: 2c002_RightToeBase
-      parentName: 2c002_RightFoot
-      position: {x: -0, y: -0.06091495, z: 0.14057297}
+    - name: 2c001_RightToeBase
+      parentName: 2c001_RightFoot
+      position: {x: -0, y: -0.059259117, z: 0.13675183}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
