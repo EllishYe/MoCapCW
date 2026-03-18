@@ -3940,6 +3940,71 @@ MonoBehaviour:
   BoneColor: {r: 0.3657885, g: 0.8490566, b: 0.41957322, a: 1}
   HideRoot: 0
   EnableConstraint: 1
+--- !u!1 &458273588
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 458273589}
+  - component: {fileID: 458273590}
+  m_Layer: 0
+  m_Name: RetargetController_Body
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &458273589
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458273588}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.61934, y: 0, z: 3.28836}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1414887595}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &458273590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458273588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 304866e2da9908b47bd4f423bafe2601, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Retargeting
+  retargetPosition:
+  - from: {fileID: 972534882}
+    to: {fileID: 972534882}
+    scaleMultiplier: 1
+    offset: {x: 0, y: 0, z: 0}
+  retargetRotation:
+  - from: {fileID: 1511156052}
+    to: {fileID: 972534882}
+    offset: {x: 0, y: 0.70710677, z: 0, w: 0.70710677}
+  - from: {fileID: 209487560}
+    to: {fileID: 761616770}
+    offset: {x: 0, y: 0.70710677, z: 0, w: 0.70710677}
+  - from: {fileID: 209487560}
+    to: {fileID: 745547916}
+    offset: {x: 0, y: 0.70710677, z: 0, w: 0.70710677}
+  - from: {fileID: 1088570642}
+    to: {fileID: 1363137770}
+    offset: {x: 0, y: 0.70710677, z: 0, w: -0.70710677}
+  - from: {fileID: 1800551461}
+    to: {fileID: 2115147394}
+    offset: {x: 0, y: 0.70710677, z: 0, w: 0.70710677}
 --- !u!4 &484526253 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -7506054573085915887, guid: 458496d023c8f2e48a56f6f72883028a, type: 3}
@@ -8377,6 +8442,7 @@ Transform:
   m_Children:
   - {fileID: 24112432}
   - {fileID: 2056377407}
+  - {fileID: 458273589}
   - {fileID: 50527507}
   - {fileID: 51433799}
   - {fileID: 1489190067}
@@ -10167,24 +10233,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 304866e2da9908b47bd4f423bafe2601, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Retargeting
-  retargetPosition:
-  - from: {fileID: 972534882}
-    to: {fileID: 972534882}
-    scaleMultiplier: 1
-    offset: {x: 0, y: 0, z: 0}
+  retargetPosition: []
   retargetRotation:
-  - from: {fileID: 1511156052}
-    to: {fileID: 972534882}
-    offset: {x: 0, y: 0.70710677, z: 0, w: 0.70710677}
-  - from: {fileID: 209487560}
-    to: {fileID: 761616770}
-    offset: {x: 0, y: 0.70710677, z: 0, w: 0.70710677}
-  - from: {fileID: 209487560}
-    to: {fileID: 745547916}
-    offset: {x: 0, y: 0.70710677, z: 0, w: 0.70710677}
-  - from: {fileID: 1088570642}
-    to: {fileID: 1363137770}
-    offset: {x: 0, y: 0.70710677, z: 0, w: -0.70710677}
   - from: {fileID: 1174692489}
     to: {fileID: 1779135502}
     offset: {x: 0, y: 0.70710677, z: 0, w: -0.70710677}
@@ -10197,9 +10247,6 @@ MonoBehaviour:
   - from: {fileID: 1637674887}
     to: {fileID: 1742441112}
     offset: {x: 0, y: 0.70710677, z: 0, w: -0.70710677}
-  - from: {fileID: 1800551461}
-    to: {fileID: 2115147394}
-    offset: {x: 0, y: 0.70710677, z: 0, w: 0.70710677}
   - from: {fileID: 248143172}
     to: {fileID: 1746929410}
     offset: {x: 0, y: 0.70710677, z: 0, w: 0.70710677}
