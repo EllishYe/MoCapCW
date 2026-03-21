@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="93b0cd8f-a814-4368-ad6c-06a6ca802c3e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Scripts/ThirdPersonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Scripts/ThirdPersonController.cs" afterDir="false" />
-    </list>
+    <list default="true" id="93b0cd8f-a814-4368-ad6c-06a6ca802c3e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,6 +54,7 @@
       <updated>1773307653578</updated>
       <workItem from="1773307653579" duration="5000" />
       <workItem from="1773505900762" duration="2424000" />
+      <workItem from="1773593981826" duration="52000" />
     </task>
     <servers />
   </component>
@@ -75,6 +74,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
