@@ -22,7 +22,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -83,7 +83,102 @@ ModelImporter:
   humanDescription:
     serializedVersion: 3
     human: []
-    skeleton: []
+    skeleton:
+    - name: MCLittleBoss(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: leftleg
+      parentName: MCLittleBoss(Clone)
+      position: {x: -0.057457387, y: -0.01331836, z: 0.079771146}
+      rotation: {x: -0.00000003774895, y: 0, z: -0, w: 1}
+      scale: {x: 6.340667, y: 6.340667, z: 6.340667}
+    - name: foot
+      parentName: leftleg
+      position: {x: -0.0049044606, y: 0.010330449, z: -0.007178897}
+      rotation: {x: -0.025130471, y: 0.6857593, z: -0.0054544127, w: 0.72737396}
+      scale: {x: 0.018071946, y: 0.018071944, z: 0.018071944}
+    - name: pCylinder17
+      parentName: leftleg
+      position: {x: -0.0027839313, y: 0.019218754, z: -0.0029689644}
+      rotation: {x: -0.030981053, y: 0.042604536, z: 0.001947717, w: 0.99860966}
+      scale: {x: 0.2997261, y: 0.043745458, z: 0.2997261}
+    - name: legs
+      parentName: MCLittleBoss(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: pCylinder11
+      parentName: MCLittleBoss(Clone)
+      position: {x: 0.13564216, y: 0.5000651, z: 0.008469439}
+      rotation: {x: 0.27053598, y: 0.31391442, z: -0.6912205, w: 0.5920155}
+      scale: {x: 4.6005425, y: 0.671456, z: 4.6005435}
+    - name: pSphere10
+      parentName: MCLittleBoss(Clone)
+      position: {x: -0.0015648794, y: 0.5530399, z: -0.079855606}
+      rotation: {x: 0.78560203, y: 0, z: -0, w: 0.61873215}
+      scale: {x: 1.493725, y: 1.493725, z: 1.493725}
+    - name: pSphere11
+      parentName: MCLittleBoss(Clone)
+      position: {x: -0.02805144, y: 0.523008, z: -0.08062807}
+      rotation: {x: 0.7489771, y: 0.11804902, z: -0.13353966, w: 0.63817304}
+      scale: {x: 1.4937251, y: 1.493725, z: 1.4937247}
+    - name: pSphere12
+      parentName: MCLittleBoss(Clone)
+      position: {x: 0.025842335, y: 0.523008, z: -0.08062807}
+      rotation: {x: 0.7427963, y: -0.15217063, z: 0.09879749, w: 0.6444663}
+      scale: {x: 1.4937248, y: 1.4937251, z: 1.4937247}
+    - name: pSphere13
+      parentName: MCLittleBoss(Clone)
+      position: {x: 0.08977458, y: 0.5366185, z: -0.06911372}
+      rotation: {x: 0.75519216, y: -0.06772932, z: 0.025744896, w: 0.65148664}
+      scale: {x: 2.1985598, y: 4.101454, z: 2.19856}
+    - name: pSphere14
+      parentName: MCLittleBoss(Clone)
+      position: {x: -0.070009544, y: 0.39812243, z: 0.030718755}
+      rotation: {x: -0.000000037748947, y: 0, z: -0, w: 1}
+      scale: {x: 5.3293595, y: 5.3293595, z: 5.3293595}
+    - name: pSphere17
+      parentName: MCLittleBoss(Clone)
+      position: {x: -0.08887275, y: 0.5366185, z: -0.06911372}
+      rotation: {x: 0.7578412, y: 0.024063258, z: -0.053202737, w: 0.64982086}
+      scale: {x: 2.19856, y: 4.1014533, z: 2.19856}
+    - name: pSphere18
+      parentName: MCLittleBoss(Clone)
+      position: {x: 0.073985204, y: 0.39812243, z: 0.030718755}
+      rotation: {x: -0.000000037748947, y: 0, z: -0, w: 1}
+      scale: {x: 5.3293595, y: 5.3293595, z: 5.3293595}
+    - name: pSphere4
+      parentName: MCLittleBoss(Clone)
+      position: {x: -0.0011336161, y: 0.52904034, z: -0.040429436}
+      rotation: {x: -0.000000037748947, y: 0, z: -0, w: 1}
+      scale: {x: 5.2577667, y: 5.2577667, z: 5.2577667}
+    - name: pSphere6
+      parentName: MCLittleBoss(Clone)
+      position: {x: -0.00044299057, y: 0.5239049, z: 0.02442629}
+      rotation: {x: 0.72860676, y: 0, z: -0, w: 0.68493223}
+      scale: {x: 13.571575, y: 13.571575, z: 13.571575}
+    - name: polySurface287
+      parentName: MCLittleBoss(Clone)
+      position: {x: 0.14322853, y: 0.49412838, z: 0.0089151915}
+      rotation: {x: -0.034149222, y: -0.64311427, z: -0.027499055, w: 0.764514}
+      scale: {x: 12.233702, y: 12.233702, z: 4.0744247}
+    - name: polySurface307
+      parentName: MCLittleBoss(Clone)
+      position: {x: -0.1374688, y: 0.49174955, z: 0.007805043}
+      rotation: {x: 0.08176399, y: -0.7477282, z: 0.051071927, w: 0.6569694}
+      scale: {x: 12.233702, y: 12.233702, z: 4.0744247}
+    - name: right_arm1
+      parentName: MCLittleBoss(Clone)
+      position: {x: -0.31742647, y: 0.47413874, z: 0.0024479218}
+      rotation: {x: 1, y: 0, z: 0, w: -0.0000000754979}
+      scale: {x: -6.340667, y: -6.340667, z: -6.340667}
+    - name: right_arm2
+      parentName: MCLittleBoss(Clone)
+      position: {x: 0.31935114, y: 0.47413874, z: 0.0024479218}
+      rotation: {x: -0.00000003774895, y: 0, z: -0, w: 1}
+      scale: {x: 6.340667, y: 6.340667, z: 6.340667}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -94,7 +189,7 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
