@@ -119,64 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &10529940
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.008862207
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.00000023841858
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 3.1757672
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7250228
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.68872494
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -87.059
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
-      propertyPath: m_Name
-      value: MocapBossFinalV6
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 635547659545568360, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
 --- !u!1001 &24112428
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7531,63 +7473,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -1144496090689476692, guid: 86084108cfebeaa4abdadf2b71acd48a, type: 3}
   m_PrefabInstance: {fileID: 659376503}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &804444471
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -4.82
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.00000042513028
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.03
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
-      propertyPath: m_Name
-      value: MocapBossFinalV6 (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -16358,6 +16243,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7344598390085887769, guid: fec0136d3f45f734997cd24826d857a4, type: 3}
   m_PrefabInstance: {fileID: 51433798}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1685304222
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.73
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.00000033086326
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.3398206
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
+      propertyPath: m_Name
+      value: MocapBossFinalV6
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
 --- !u!43 &1786817607
 Mesh:
   m_ObjectHideFlags: 0
@@ -17004,5 +16946,4 @@ SceneRoots:
   - {fileID: 530241905}
   - {fileID: 1595818204}
   - {fileID: 2035118790}
-  - {fileID: 10529940}
-  - {fileID: 804444471}
+  - {fileID: 1685304222}
