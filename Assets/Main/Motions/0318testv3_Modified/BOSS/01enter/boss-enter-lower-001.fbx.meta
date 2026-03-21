@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e8f2cf704665b1c40b65a1cde9fb5010
+guid: 3e0f07f9f2d27124b8c1d2c9ebd0714b
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
@@ -17,7 +17,7 @@ ModelImporter:
     removeConstantScaleCurves: 0
     motionNodeName: 
     animationImportErrors: 
-    animationImportWarnings: "\nClip 'boss-fight-pat_008' has import animation warnings
+    animationImportWarnings: "\nClip 'boss-enter_012' has import animation warnings
       that might lower retargeting quality:\nNote: Activate translation DOF on avatar
       to improve retargeting quality.\n\t'2c002_Spine1' has translation animation
       that will be discarded.\n\t'2c002_Spine1' is inbetween humanoid transforms
@@ -38,11 +38,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: boss-fight-pat_008
-      takeName: boss-fight-pat_008
-      internalID: -2493673116820781266
-      firstFrame: 600
-      lastFrame: 1673
+      name: boss-enter_012
+      takeName: boss-enter_012
+      internalID: 4090719313343825786
+      firstFrame: 402
+      lastFrame: 1527
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -280,470 +280,485 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: Boss-fight-pat-lower-001(Clone)
+    - name: boss-enter-lower-001(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: boss-fight-pat_008
-      parentName: Boss-fight-pat-lower-001(Clone)
+    - name: boss-enter_012
+      parentName: boss-enter-lower-001(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c001_WaistLFront
-      parentName: boss-fight-pat_008
-      position: {x: 0.025728272, y: 1.0135428, z: 0.11399202}
+      parentName: boss-enter_012
+      position: {x: 0.035111602, y: 1.0148118, z: 0.2964404}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c001_WaistRFront
-      parentName: boss-fight-pat_008
-      position: {x: 0.29938877, y: 1.0162971, z: 0.16948375}
+      parentName: boss-enter_012
+      position: {x: 0.31085247, y: 1.0156206, z: 0.3296991}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c001_WaistLBack
-      parentName: boss-fight-pat_008
-      position: {x: 0.07963978, y: 0.9354976, z: -0.009388054}
+      parentName: boss-enter_012
+      position: {x: 0.0768586, y: 0.9378767, z: 0.1669369}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c001_WaistRBack
-      parentName: boss-fight-pat_008
-      position: {x: 0.30223587, y: 0.94394696, z: 0.031320024}
+      parentName: boss-enter_012
+      position: {x: 0.30236927, y: 0.94909, z: 0.18887374}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c001_BackTop
-      parentName: boss-fight-pat_008
-      position: {x: 0.1887392, y: 1.3629066, z: -0.045048393}
+      parentName: boss-enter_012
+      position: {x: 0.19041258, y: 1.3625401, z: 0.128995}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c001_Chest
-      parentName: boss-fight-pat_008
-      position: {x: 0.16812272, y: 1.3008763, z: 0.12791656}
+      parentName: boss-enter_012
+      position: {x: 0.18255635, y: 1.3059613, z: 0.30101556}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c001_BackLeft
-      parentName: boss-fight-pat_008
-      position: {x: 0.14459461, y: 1.1996095, z: -0.0820134}
+      parentName: boss-enter_012
+      position: {x: 0.13812841, y: 1.2000245, z: 0.094948106}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c001_BackRight
-      parentName: boss-fight-pat_008
-      position: {x: 0.26883078, y: 1.2043883, z: -0.06612187}
+      parentName: boss-enter_012
+      position: {x: 0.2634875, y: 1.2012726, z: 0.09859178}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c001_HeadTop
-      parentName: boss-fight-pat_008
-      position: {x: 0.18524419, y: 1.6484399, z: 0.03776015}
+      parentName: boss-enter_012
+      position: {x: 0.2070259, y: 1.6542219, z: 0.21984331}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c001_HeadFront
-      parentName: boss-fight-pat_008
-      position: {x: 0.18030925, y: 1.638536, z: 0.11467348}
+      parentName: boss-enter_012
+      position: {x: 0.20444934, y: 1.6413294, z: 0.29646164}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c001_HeadSide
-      parentName: boss-fight-pat_008
-      position: {x: 0.26929244, y: 1.5691024, z: 0.0331217}
+      parentName: boss-enter_012
+      position: {x: 0.28908342, y: 1.5735711, z: 0.20901056}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c001_LShoulderBack
-      parentName: boss-fight-pat_008
-      position: {x: 0.018452335, y: 1.2939421, z: -0.043789294}
+      parentName: boss-enter_012
+      position: {x: 0.016819004, y: 1.2927138, z: 0.14599761}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c001_LShoulderTop
-      parentName: boss-fight-pat_008
-      position: {x: 0.06741826, y: 1.3849367, z: 0.008365328}
+      parentName: boss-enter_012
+      position: {x: 0.07044589, y: 1.3875964, z: 0.18939866}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c001_LElbowOut
-      parentName: boss-fight-pat_008
-      position: {x: -0.21560317, y: 1.3468952, z: 0.03310337}
+      parentName: boss-enter_012
+      position: {x: -0.22143252, y: 1.3248495, z: 0.2434662}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c001_LUArmHigh
-      parentName: boss-fight-pat_008
-      position: {x: -0.088062316, y: 1.3087655, z: -0.003054424}
+      parentName: boss-enter_012
+      position: {x: -0.0895892, y: 1.298327, z: 0.19567731}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c001_LHandOut
-      parentName: boss-fight-pat_008
-      position: {x: -0.54047644, y: 1.3515129, z: 0.0465809}
+      parentName: boss-enter_012
+      position: {x: -0.5379919, y: 1.3083338, z: 0.2983496}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c001_LWristOut
-      parentName: boss-fight-pat_008
-      position: {x: -0.4205824, y: 1.3402122, z: 0.055696905}
+      parentName: boss-enter_012
+      position: {x: -0.4232549, y: 1.3087302, z: 0.29000664}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c001_LWristIn
-      parentName: boss-fight-pat_008
-      position: {x: -0.40612882, y: 1.3391889, z: 0.1496831}
+      parentName: boss-enter_012
+      position: {x: -0.3988289, y: 1.286861, z: 0.37805855}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c001_RShoulderBack
-      parentName: boss-fight-pat_008
-      position: {x: 0.35718596, y: 1.2819412, z: -0.010217621}
+      parentName: boss-enter_012
+      position: {x: 0.3597671, y: 1.270429, z: 0.1483824}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c001_RShoulderTop
-      parentName: boss-fight-pat_008
-      position: {x: 0.29931822, y: 1.3918219, z: 0.037948165}
+      parentName: boss-enter_012
+      position: {x: 0.31862462, y: 1.3855952, z: 0.19755216}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c001_RElbowOut
-      parentName: boss-fight-pat_008
-      position: {x: 0.5760499, y: 1.3337231, z: 0.120576225}
+      parentName: boss-enter_012
+      position: {x: 0.6007613, y: 1.2771189, z: 0.2586085}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c001_RUArmHigh
-      parentName: boss-fight-pat_008
-      position: {x: 0.46251005, y: 1.297785, z: 0.064784124}
+      parentName: boss-enter_012
+      position: {x: 0.47455367, y: 1.2646791, z: 0.21265434}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c001_RHandOut
-      parentName: boss-fight-pat_008
-      position: {x: 0.857776, y: 1.3782871, z: 0.24816917}
+      parentName: boss-enter_012
+      position: {x: 0.88445973, y: 1.2775291, z: 0.38162163}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c001_RWristOut
-      parentName: boss-fight-pat_008
-      position: {x: 0.7595658, y: 1.3742836, z: 0.20853935}
+      parentName: boss-enter_012
+      position: {x: 0.79927784, y: 1.2883519, z: 0.3466503}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c001_RWristIn
-      parentName: boss-fight-pat_008
-      position: {x: 0.72071964, y: 1.3728089, z: 0.28520298}
+      parentName: boss-enter_012
+      position: {x: 0.7571213, y: 1.2769216, z: 0.4221105}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c001_LKneeOut
-      parentName: boss-fight-pat_008
-      position: {x: 0.0152267665, y: 0.4410781, z: 0.052301094}
+      parentName: boss-enter_012
+      position: {x: 0.029421411, y: 0.44253477, z: 0.2513592}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c001_LThigh
-      parentName: boss-fight-pat_008
-      position: {x: 0.055165853, y: 0.62024814, z: 0.16067547}
+      parentName: boss-enter_012
+      position: {x: 0.07071363, y: 0.6267533, z: 0.35148382}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c001_LAnkleOut
-      parentName: boss-fight-pat_008
-      position: {x: 0.040295865, y: 0.06981756, z: 0.02809402}
+      parentName: boss-enter_012
+      position: {x: 0.055170994, y: 0.07132827, z: 0.22107182}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c001_LShin
-      parentName: boss-fight-pat_008
-      position: {x: 0.06769995, y: 0.2579096, z: 0.08226873}
+      parentName: boss-enter_012
+      position: {x: 0.08242533, y: 0.25645036, z: 0.2782025}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c001_LToeOut
-      parentName: boss-fight-pat_008
-      position: {x: 0.031434886, y: 0.008198191, z: 0.20349598}
+      parentName: boss-enter_012
+      position: {x: 0.04779282, y: 0.010630151, z: 0.3976776}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c001_LToeIn
-      parentName: boss-fight-pat_008
-      position: {x: 0.14787725, y: -0.004219716, z: 0.19522148}
+      parentName: boss-enter_012
+      position: {x: 0.1638322, y: 0.008061213, z: 0.38968104}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c001_RKneeOut
-      parentName: boss-fight-pat_008
-      position: {x: 0.3349039, y: 0.4446648, z: 0.0650276}
+      parentName: boss-enter_012
+      position: {x: 0.3418391, y: 0.45111236, z: 0.24833363}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c001_RThigh
-      parentName: boss-fight-pat_008
-      position: {x: 0.22499332, y: 0.5122405, z: 0.14405386}
+      parentName: boss-enter_012
+      position: {x: 0.23943128, y: 0.52174133, z: 0.33147892}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c001_RAnkleOut
-      parentName: boss-fight-pat_008
-      position: {x: 0.30477184, y: 0.06560711, z: 0.026795084}
+      parentName: boss-enter_012
+      position: {x: 0.31749114, y: 0.06620943, z: 0.22267152}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c001_RShin
-      parentName: boss-fight-pat_008
-      position: {x: 0.23623094, y: 0.33287823, z: 0.08379123}
+      parentName: boss-enter_012
+      position: {x: 0.24828066, y: 0.33517897, z: 0.27961433}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c001_RToeOut
-      parentName: boss-fight-pat_008
-      position: {x: 0.30136976, y: 0.011791393, z: 0.20459491}
+      parentName: boss-enter_012
+      position: {x: 0.323749, y: 0.013081429, z: 0.40090412}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c001_RToeIn
-      parentName: boss-fight-pat_008
-      position: {x: 0.21065524, y: 0.011831042, z: 0.20466788}
+      parentName: boss-enter_012
+      position: {x: 0.2334268, y: 0.01897136, z: 0.4067909}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_WaistLFront
-      parentName: boss-fight-pat_008
-      position: {x: 0.06526764, y: 0.76370835, z: -0.7890266}
+      parentName: boss-enter_012
+      position: {x: 0.060811087, y: 0.75692254, z: -0.80272377}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_WaistRFront
-      parentName: boss-fight-pat_008
-      position: {x: 0.3501604, y: 0.78307074, z: -0.7799846}
+      parentName: boss-enter_012
+      position: {x: 0.34187382, y: 0.7751405, z: -0.76552457}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_WaistLBack
-      parentName: boss-fight-pat_008
-      position: {x: 0.061173644, y: 0.79379106, z: -0.938902}
+      parentName: boss-enter_012
+      position: {x: 0.06955358, y: 0.78849065, z: -0.95248294}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_WaistRBack
-      parentName: boss-fight-pat_008
-      position: {x: 0.33094436, y: 0.79358184, z: -0.97841984}
+      parentName: boss-enter_012
+      position: {x: 0.34150866, y: 0.80225307, z: -0.9612325}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_BackTop
-      parentName: boss-fight-pat_008
-      position: {x: 0.20710479, y: 1.1597648, z: -0.9815255}
+      parentName: boss-enter_012
+      position: {x: 0.21048959, y: 1.1623768, z: -0.9635356}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_Chest
-      parentName: boss-fight-pat_008
-      position: {x: 0.20219716, y: 1.1138123, z: -0.7603297}
+      parentName: boss-enter_012
+      position: {x: 0.19481489, y: 1.1047806, z: -0.74778646}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_BackLeft
-      parentName: boss-fight-pat_008
-      position: {x: 0.08819721, y: 0.97444075, z: -0.98312986}
+      parentName: boss-enter_012
+      position: {x: 0.09563087, y: 0.9763536, z: -0.98007584}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_BackRight
-      parentName: boss-fight-pat_008
-      position: {x: 0.33604583, y: 0.9822757, z: -0.9787054}
+      parentName: boss-enter_012
+      position: {x: 0.3336993, y: 0.9828825, z: -0.96101385}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_HeadTop
-      parentName: boss-fight-pat_008
-      position: {x: 0.2134474, y: 1.4437093, z: -0.7753269}
+      parentName: boss-enter_012
+      position: {x: 0.21497974, y: 1.4420027, z: -0.76902443}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_HeadFront
-      parentName: boss-fight-pat_008
-      position: {x: 0.21298538, y: 1.3961983, z: -0.71315736}
+      parentName: boss-enter_012
+      position: {x: 0.23165257, y: 1.3999655, z: -0.7057116}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_HeadSide
-      parentName: boss-fight-pat_008
-      position: {x: 0.32356936, y: 1.361436, z: -0.8086074}
+      parentName: boss-enter_012
+      position: {x: 0.31720576, y: 1.3609554, z: -0.8243382}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_LShoulderBack
-      parentName: boss-fight-pat_008
-      position: {x: 0.05070521, y: 1.0884264, z: -0.9834892}
+      parentName: boss-enter_012
+      position: {x: 0.0605683, y: 1.0861534, z: -0.9830669}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_LShoulderTop
-      parentName: boss-fight-pat_008
-      position: {x: 0.0673472, y: 1.180856, z: -0.92818534}
+      parentName: boss-enter_012
+      position: {x: 0.06787331, y: 1.1763711, z: -0.92055905}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_LElbowOut
-      parentName: boss-fight-pat_008
-      position: {x: -0.19831978, y: 1.0453092, z: -0.97595334}
+      parentName: boss-enter_012
+      position: {x: -0.17894685, y: 1.0296556, z: -1.0063002}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_LUArmHigh
-      parentName: boss-fight-pat_008
-      position: {x: -0.107058026, y: 1.0543407, z: -0.970364}
+      parentName: boss-enter_012
+      position: {x: -0.08807877, y: 1.0408078, z: -0.98944855}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_LHandOut
-      parentName: boss-fight-pat_008
-      position: {x: -0.47605276, y: 1.0055785, z: -1.0660173}
+      parentName: boss-enter_012
+      position: {x: -0.44667011, y: 0.9861588, z: -1.119754}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_LWristOut
-      parentName: boss-fight-pat_008
-      position: {x: -0.3973765, y: 1.0234735, z: -1.0243875}
+      parentName: boss-enter_012
+      position: {x: -0.37444958, y: 1.0058848, z: -1.0723313}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_LWristIn
-      parentName: boss-fight-pat_008
-      position: {x: -0.42079616, y: 1.0806427, z: -0.9567377}
+      parentName: boss-enter_012
+      position: {x: -0.40568572, y: 1.0470589, z: -0.9956701}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_RShoulderBack
-      parentName: boss-fight-pat_008
-      position: {x: 0.34574956, y: 1.0792451, z: -0.9862345}
+      parentName: boss-enter_012
+      position: {x: 0.34380066, y: 1.0808052, z: -0.9672926}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_RShoulderTop
-      parentName: boss-fight-pat_008
-      position: {x: 0.34438193, y: 1.1765068, z: -0.9316262}
+      parentName: boss-enter_012
+      position: {x: 0.34812826, y: 1.1754738, z: -0.9095497}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_RElbowOut
-      parentName: boss-fight-pat_008
-      position: {x: 0.61741364, y: 1.0932711, z: -0.96726376}
+      parentName: boss-enter_012
+      position: {x: 0.6086039, y: 1.0585171, z: -0.96402913}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_RUArmHigh
-      parentName: boss-fight-pat_008
-      position: {x: 0.5427394, y: 1.0430402, z: -0.9511908}
+      parentName: boss-enter_012
+      position: {x: 0.5281952, y: 1.018466, z: -0.94256544}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_RHandOut
-      parentName: boss-fight-pat_008
-      position: {x: 0.8842033, y: 1.1221069, z: -1.0272207}
+      parentName: boss-enter_012
+      position: {x: 0.86356634, y: 1.049509, z: -1.0336471}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_RWristOut
-      parentName: boss-fight-pat_008
-      position: {x: 0.81464094, y: 1.1003379, z: -0.9904852}
+      parentName: boss-enter_012
+      position: {x: 0.8015409, y: 1.0429615, z: -0.99148625}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_RWristIn
-      parentName: boss-fight-pat_008
-      position: {x: 0.8236567, y: 1.1507466, z: -0.9058574}
+      parentName: boss-enter_012
+      position: {x: 0.82066876, y: 1.1005296, z: -0.9127657}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_LKneeOut
-      parentName: boss-fight-pat_008
-      position: {x: 0.0064501325, y: 0.51466125, z: -0.49406126}
+      parentName: boss-enter_012
+      position: {x: 0.0037074068, y: 0.5318721, z: -0.49653372}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_LThigh
-      parentName: boss-fight-pat_008
-      position: {x: 0.08973334, y: 0.6725475, z: -0.6256951}
+      parentName: boss-enter_012
+      position: {x: 0.08604066, y: 0.6845987, z: -0.6297553}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_LAnkleOut
-      parentName: boss-fight-pat_008
-      position: {x: 0.020452602, y: 0.16250557, z: -0.5133562}
+      parentName: boss-enter_012
+      position: {x: 0.027411563, y: 0.18484554, z: -0.51206434}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_LShin
-      parentName: boss-fight-pat_008
-      position: {x: 0.06820253, y: 0.37061614, z: -0.43185332}
+      parentName: boss-enter_012
+      position: {x: 0.06619649, y: 0.39004794, z: -0.4307472}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_LToeOut
-      parentName: boss-fight-pat_008
-      position: {x: -0.008456652, y: 0.031227283, z: -0.38428}
+      parentName: boss-enter_012
+      position: {x: -0.006985473, y: 0.06628694, z: -0.37594882}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_LToeIn
-      parentName: boss-fight-pat_008
-      position: {x: 0.07902622, y: 0.032695834, z: -0.32867682}
+      parentName: boss-enter_012
+      position: {x: 0.08151742, y: 0.0764816, z: -0.32538912}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_RKneeOut
-      parentName: boss-fight-pat_008
-      position: {x: 0.46201333, y: 0.52906775, z: -0.5103232}
+      parentName: boss-enter_012
+      position: {x: 0.43818364, y: 0.5410618, z: -0.49796894}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_RThigh
-      parentName: boss-fight-pat_008
-      position: {x: 0.38478497, y: 0.63339347, z: -0.5329946}
+      parentName: boss-enter_012
+      position: {x: 0.3713622, y: 0.6494116, z: -0.52343667}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_RAnkleOut
-      parentName: boss-fight-pat_008
-      position: {x: 0.44557413, y: 0.18222769, z: -0.54126805}
+      parentName: boss-enter_012
+      position: {x: 0.40529364, y: 0.19970989, z: -0.52771735}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_RShin
-      parentName: boss-fight-pat_008
-      position: {x: 0.42151567, y: 0.4408049, z: -0.43938413}
+      parentName: boss-enter_012
+      position: {x: 0.39271715, y: 0.45798978, z: -0.42450404}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_RToeOut
-      parentName: boss-fight-pat_008
-      position: {x: 0.48912308, y: 0.018747902, z: -0.40170702}
+      parentName: boss-enter_012
+      position: {x: 0.43832022, y: 0.046254776, z: -0.37577075}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_RToeIn
-      parentName: boss-fight-pat_008
-      position: {x: 0.39019656, y: 0.035338495, z: -0.3573722}
+      parentName: boss-enter_012
+      position: {x: 0.3377945, y: 0.06689751, z: -0.3386005}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Unlabeled 5427
-      parentName: boss-fight-pat_008
-      position: {x: 0.039823018, y: 0.9931377, z: -0.14828372}
+    - name: Unlabeled 4223
+      parentName: boss-enter_012
+      position: {x: 0.9451938, y: 0.72015196, z: -0.18444724}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Unlabeled 4224
+      parentName: boss-enter_012
+      position: {x: 0.40545988, y: 0.19840658, z: -0.55163515}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Unlabeled 4225
+      parentName: boss-enter_012
+      position: {x: 0.404315, y: 0.19718695, z: -0.55651176}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Unlabeled 4226
+      parentName: boss-enter_012
+      position: {x: 0.14718066, y: 0.62647516, z: -0.5653755}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_Hips
-      parentName: Boss-fight-pat-lower-001(Clone)
-      position: {x: 0, y: 0.91639566, z: 0}
-      rotation: {x: 0.015911417, y: 0.036636, z: 0.024327068, w: 0.99890584}
+      parentName: boss-enter-lower-001(Clone)
+      position: {x: 0, y: 0.9083543, z: 0}
+      rotation: {x: 0.03612457, y: -0.014166231, z: 0.039396614, w: 0.99846995}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_Spine
       parentName: 2c002_Hips
       position: {x: -0, y: 0.07758519, z: 0}
-      rotation: {x: -0.08335099, y: 0.0053906385, z: -0.022257328, w: 0.99625707}
+      rotation: {x: -0.08831349, y: 0.027030697, z: -0.014978964, w: 0.9956132}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_Spine1
       parentName: 2c002_Spine
-      position: {x: -0.00000059604645, y: 0.15787584, z: 0.0000033974648}
-      rotation: {x: -0.037892547, y: 0.0018267349, z: -0.018268915, w: 0.9991132}
+      position: {x: -0.0000013709068, y: 0.15727335, z: 0.0000025629997}
+      rotation: {x: -0.028717969, y: 0.008998372, z: -0.040822405, w: 0.9987131}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_Neck
       parentName: 2c002_Spine1
       position: {x: -0, y: 0.18091613, z: 0}
-      rotation: {x: 0.29514012, y: -0.0048611416, z: 0.023132022, w: 0.9551616}
+      rotation: {x: 0.2595777, y: 0.0548411, z: 0.057409655, w: 0.9624531}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_Head
       parentName: 2c002_Neck
       position: {x: -0, y: 0.14665493, z: 0.018923217}
-      rotation: {x: 0.035141706, y: -0.0025599296, z: 0.004646565, w: 0.99936825}
+      rotation: {x: -0.01786766, y: 0.07234032, z: -0.061178986, w: 0.99534154}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_LeftShoulder
       parentName: 2c002_Spine1
       position: {x: -0.03734307, y: 0.14298272, z: -0.005313188}
-      rotation: {x: -0.015955595, y: -0.019491293, z: -0.1340392, w: 0.99065584}
+      rotation: {x: -0.0022614207, y: -0.048046034, z: -0.12899812, w: 0.9904777}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_LeftArm
       parentName: 2c002_LeftShoulder
       position: {x: -0.11676418, y: 0, z: 0}
-      rotation: {x: 0.096033715, y: -0.009562302, z: 0.17695446, w: 0.979476}
+      rotation: {x: -0.0035490782, y: -0.011430976, z: 0.16905175, w: 0.9855345}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_LeftForeArm
       parentName: 2c002_LeftArm
       position: {x: -0.26941353, y: 0, z: 0}
-      rotation: {x: -0.16269802, y: -0.007870829, z: -0.053076677, w: 0.98521584}
+      rotation: {x: -0.08101179, y: -0.0025514283, z: -0.052297916, w: 0.9953369}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_LeftHand
       parentName: 2c002_LeftForeArm
-      position: {x: -0.20103443, y: -0.0000027418137, z: -0.0000071525574}
-      rotation: {x: -0.16335627, y: -0.033682168, z: 0.16439658, w: 0.9721903}
+      position: {x: -0.19060798, y: 0.0000023841858, z: 0.0000030398369}
+      rotation: {x: -0.08146428, y: -0.04478204, z: 0.17609295, w: 0.9799742}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_RightShoulder
       parentName: 2c002_Spine1
       position: {x: 0.038177647, y: 0.14298272, z: -0.005313188}
-      rotation: {x: -0.013404242, y: -0.063331895, z: 0.14695624, w: 0.98702246}
+      rotation: {x: -0.006275039, y: -0.041388188, z: 0.14557923, w: 0.9884606}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_RightArm
       parentName: 2c002_RightShoulder
       position: {x: 0.11676418, y: 0, z: 0}
-      rotation: {x: -0.014750647, y: 0.02016182, z: -0.12660985, w: 0.991638}
+      rotation: {x: -0.04773387, y: 0.047683276, z: -0.15513739, w: 0.9855862}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_RightForeArm
       parentName: 2c002_RightArm
       position: {x: 0.26941353, y: 0, z: 0}
-      rotation: {x: -0.063695244, y: 0.026545007, z: 0.015684836, w: 0.997493}
+      rotation: {x: -0.08828094, y: 0.002977891, z: 0.025284318, w: 0.9957702}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_RightHand
       parentName: 2c002_RightForeArm
-      position: {x: 0.20002061, y: 0.0000013113022, z: -0.000015258789}
-      rotation: {x: -0.0630104, y: 0.009210808, z: 0.149196, w: 0.986755}
+      position: {x: 0.1907149, y: -0.0000022649765, z: 0.0000056624413}
+      rotation: {x: -0.08722285, y: 0.05923613, z: 0.144691, w: 0.9838434}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_LeftUpLeg
       parentName: 2c002_Hips
       position: {x: -0.094616085, y: 0, z: 0}
-      rotation: {x: -0.11787012, y: -0.06960007, z: -0.063757956, w: 0.98853296}
+      rotation: {x: -0.13889627, y: -0.04987975, z: -0.07040854, w: 0.9865407}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_LeftLeg
       parentName: 2c002_LeftUpLeg
       position: {x: -0, y: -0.49553823, z: 0}
-      rotation: {x: 0.27943438, y: 0.38818523, z: 0.14481904, w: 0.8661732}
+      rotation: {x: 0.28345552, y: 0.36477628, z: 0.13083762, w: 0.877196}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_LeftFoot
       parentName: 2c002_LeftLeg
       position: {x: -0, y: -0.34769693, z: 0}
-      rotation: {x: -0.11222866, y: -0.44030333, z: 0.03201306, w: 0.89023197}
+      rotation: {x: -0.1487914, y: -0.39037886, z: 0.0154660875, w: 0.90841967}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_LeftToeBase
       parentName: 2c002_LeftFoot
@@ -753,17 +768,17 @@ ModelImporter:
     - name: 2c002_RightUpLeg
       parentName: 2c002_Hips
       position: {x: 0.094616085, y: 0, z: 0}
-      rotation: {x: -0.11590733, y: 0.073872834, z: 0.010753444, w: 0.9904508}
+      rotation: {x: -0.13403073, y: 0.1429834, z: -0.010068135, w: 0.9805561}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_RightLeg
       parentName: 2c002_RightUpLeg
       position: {x: -0, y: -0.49553823, z: 0}
-      rotation: {x: 0.28191367, y: -0.4062128, z: -0.13717903, w: 0.85831106}
+      rotation: {x: 0.27675968, y: -0.48348004, z: -0.1398459, w: 0.8185928}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_RightFoot
       parentName: 2c002_RightLeg
       position: {x: -0, y: -0.34769693, z: 0}
-      rotation: {x: -0.15444325, y: 0.42639786, z: -0.03628391, w: 0.89051425}
+      rotation: {x: -0.178295, y: 0.45859137, z: -0.02836093, w: 0.8701153}
       scale: {x: 1, y: 1, z: 1}
     - name: 2c002_RightToeBase
       parentName: 2c002_RightFoot
