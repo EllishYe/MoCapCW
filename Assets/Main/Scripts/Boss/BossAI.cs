@@ -13,6 +13,7 @@ public class BossAI : MonoBehaviour
     private bool isAttacking = false;
     private bool isInterrupted = false;
     private bool isAlive = true;
+    bool canAttack = false;
 
     void Start()
     {
@@ -24,7 +25,7 @@ public class BossAI : MonoBehaviour
         while (isAlive)
         {
             // 等待可以攻击
-            yield return new WaitUntil(() => !isAttacking && !isInterrupted);
+            yield return new WaitUntil(() => canAttack && !isAttacking && !isInterrupted);
 
             // 冷却时间
             yield return new WaitForSeconds(attackCooldown);
@@ -48,14 +49,17 @@ public class BossAI : MonoBehaviour
         {
             case BossAttackQueue.AttackType.Pat:
                 animator.SetTrigger("PatTrigger");
+                Debug.Log("Pat");
                 break;
 
             case BossAttackQueue.AttackType.Throw:
                 animator.SetTrigger("ThrowTrigger");
+                Debug.Log("Throw");
                 break;
 
             case BossAttackQueue.AttackType.Sweep:
                 animator.SetTrigger("SweepTrigger");
+                Debug.Log("Sweep");
                 break;
         }
     }
@@ -63,11 +67,20 @@ public class BossAI : MonoBehaviour
     // ===== Animation Events =====
 
     /// <summary>
+    /// 入场动画结束（在入场动画最后一帧调用）
+    /// </summary>
+    public void OnEnterFinished()
+    {
+        canAttack = true;
+    }
+
+    /// <summary>
     /// 攻击动画结束（在动画最后一帧调用）
     /// </summary>
     public void OnAttackFinished()
     {
         isAttacking = false;
+        Debug.Log("Attack Finished");
     }
 
     /// <summary>

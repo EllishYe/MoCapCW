@@ -314,6 +314,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fec0136d3f45f734997cd24826d857a4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 137260001}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fec0136d3f45f734997cd24826d857a4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 137260003}
     - targetCorrespondingSourceObject: {fileID: 4762363370849725434, guid: fec0136d3f45f734997cd24826d857a4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 452983023}
@@ -366,6 +369,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossInputKeyTest
   BossAnimator: {fileID: 137260000}
+--- !u!114 &137260003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137259996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ce5cf1134af7154794583847ef494f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossAI
+  animator: {fileID: 137260000}
+  attackQueue: {fileID: 1588922032}
+  attackCooldown: 1.5
 --- !u!4 &140492337 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -1257176305362182314, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
@@ -8808,6 +8826,7 @@ Transform:
   - {fileID: 1613889764}
   - {fileID: 51433799}
   - {fileID: 1489190067}
+  - {fileID: 1588922031}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1421036782
@@ -8964,6 +8983,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fec0136d3f45f734997cd24826d857a4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1489190069}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fec0136d3f45f734997cd24826d857a4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1489190071}
     - targetCorrespondingSourceObject: {fileID: 4762363370849725434, guid: fec0136d3f45f734997cd24826d857a4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1558308063}
@@ -8991,6 +9013,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossInputKeyTest
   BossAnimator: {fileID: 1489190068}
+--- !u!114 &1489190071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235523958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ce5cf1134af7154794583847ef494f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossAI
+  animator: {fileID: 1489190068}
+  attackQueue: {fileID: 1588922032}
+  attackCooldown: 1.5
 --- !u!4 &1496548331 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8746776529323897044, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
@@ -9463,6 +9500,50 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
+--- !u!1 &1588922030
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1588922031}
+  - component: {fileID: 1588922032}
+  m_Layer: 0
+  m_Name: BossAttackQueue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1588922031
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588922030}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1414887595}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1588922032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588922030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74b349e3c0037ee49abd448da5071ee9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossAttackQueue
 --- !u!4 &1597715056 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6412141536667770719, guid: fec0136d3f45f734997cd24826d857a4, type: 3}
