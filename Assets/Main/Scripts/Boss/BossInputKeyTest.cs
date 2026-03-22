@@ -11,7 +11,6 @@ public class BossInputKeyTest : MonoBehaviour
     private KeyCode ArmFallLKey = KeyCode.F5;
     private KeyCode ArmFallRKey = KeyCode.F6;
     private KeyCode DieKey = KeyCode.F7;
-    private KeyCode JitterKey = KeyCode.F8;
 
 
     void Update()
@@ -48,10 +47,7 @@ public class BossInputKeyTest : MonoBehaviour
         {
             BossAnimator.SetTrigger("DieTrigger");
         }
-        if (Input.GetKeyDown(JitterKey))
-        {
-            BossAnimator.SetTrigger("JitterTrigger");
-        }
+
 
     }
 }
