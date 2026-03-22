@@ -25,6 +25,7 @@ public class BossAI : MonoBehaviour
     {
         while (isAlive)
         {
+            
             // 等待可以攻击
             yield return new WaitUntil(() => canAttack && !isAttacking && !isInterrupted);
 
@@ -32,7 +33,10 @@ public class BossAI : MonoBehaviour
             yield return new WaitForSeconds(attackCooldown);
 
             // 再次确认（防止中途被打断）
-            if (isInterrupted) continue;
+            if (isInterrupted)
+            {
+                continue;
+            }
 
             // 获取攻击
             var attack = attackQueue.GetNextAttack();
@@ -62,10 +66,12 @@ public class BossAI : MonoBehaviour
                 triggerName = "SweepTrigger";
                 break;
         }
+        //输出本次要执行的攻击信息到 Console
+        Debug.Log($"[BossAI] AttackType={type} ");
 
         // 同时触发两个Animator
-        lowerAnimator.SetTrigger(triggerName);
-        upperAnimator.SetTrigger(triggerName);
+        lowerAnimator?.SetTrigger(triggerName);
+        upperAnimator?.SetTrigger(triggerName);
     }
 
     // ===== Animation Events =====
@@ -94,6 +100,8 @@ public class BossAI : MonoBehaviour
     {
         isInterrupted = true;
         isAttacking = false;
+        canAttack = false;
+        Debug.Log("Boss Interrupted");
     }
 
     /// <summary>
@@ -102,6 +110,8 @@ public class BossAI : MonoBehaviour
     public void OnInterruptFinished()
     {
         isInterrupted = false;
+        canAttack = true;
+        Debug.Log("Boss Interrupt Finished");
     }
 
     /// <summary>
@@ -112,4 +122,56 @@ public class BossAI : MonoBehaviour
         isAlive = false;
         StopAllCoroutines();
     }
+
+    #region Tigger Update
+    public void EnterBoss()
+    {
+        lowerAnimator.SetBool("IsEntered", true);
+        upperAnimator.SetBool("IsEntered", true);
+    }
+
+    public void PlayPat()
+    {
+        lowerAnimator.SetTrigger("PatTrigger");
+        upperAnimator.SetTrigger("PatTrigger");
+    }
+
+    public void PlayThrow()
+    {
+        lowerAnimator.SetTrigger("ThrowTrigger");
+        upperAnimator.SetTrigger("ThrowTrigger");
+    }
+
+    public void PlaySweep()
+    {
+        lowerAnimator.SetTrigger("SweepTrigger");
+        upperAnimator.SetTrigger("SweepTrigger");
+    }
+
+    public void TriggerHurt()
+    {
+        lowerAnimator.SetTrigger("HurtTrigger");
+        upperAnimator.SetTrigger("HurtTrigger");
+    }
+
+    public void PlayArmFallL()
+    {
+        lowerAnimator.SetTrigger("ArmFallLTrigger");
+        upperAnimator.SetTrigger("ArmFallLTrigger");
+    }
+
+    public void PlayArmFallR()
+    {
+        lowerAnimator.SetTrigger("ArmFallRTrigger");
+        upperAnimator.SetTrigger("ArmFallRTrigger");
+    }
+
+    public void TriggerDie()
+    {
+        lowerAnimator.SetTrigger("DieTrigger");
+        upperAnimator.SetTrigger("DieTrigger");
+    }
+    #endregion
+
+
 }

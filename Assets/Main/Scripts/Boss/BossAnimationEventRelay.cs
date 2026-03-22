@@ -23,5 +23,8 @@ public class BossAnimationEventRelay : MonoBehaviour
     {
         bossAI.OnInterruptFinished();
     }
-    
+    public void OnDie()
+    {
+        bossAI.OnDie();
+    }
 }
