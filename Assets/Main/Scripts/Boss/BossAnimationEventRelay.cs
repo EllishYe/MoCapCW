@@ -3,6 +3,7 @@ using UnityEngine;
 public class BossAnimationEventRelay : MonoBehaviour
 {
     public BossAI bossAI;
+    public BossAttackController bossAttackController;
 
     public void OnEnterFinished()
     {
@@ -27,4 +28,18 @@ public class BossAnimationEventRelay : MonoBehaviour
     {
         bossAI.OnDie();
     }
+
+
+    #region Animation Events for Pat
+
+    public void OnPatHitLeft() {
+        bossAttackController.OnPatHit(0);
+    }
+    public void OnPatHitRight()
+    {
+        bossAttackController.OnPatHit(1);
+    }
+
+
+    #endregion
 }
