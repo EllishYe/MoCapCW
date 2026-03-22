@@ -4,7 +4,8 @@ using UnityEngine;
 public class BossAI : MonoBehaviour
 {
     [Header("References")]
-    public Animator animator;
+    public Animator lowerAnimator; // Figure01
+    public Animator upperAnimator; // Figure02
     public BossAttackQueue attackQueue;
 
     [Header("Settings")]
@@ -45,29 +46,32 @@ public class BossAI : MonoBehaviour
 
     void PlayAttack(BossAttackQueue.AttackType type)
     {
+        string triggerName = "";
+
         switch (type)
         {
             case BossAttackQueue.AttackType.Pat:
-                animator.SetTrigger("PatTrigger");
-                Debug.Log("Pat");
+                triggerName = "PatTrigger";
                 break;
 
             case BossAttackQueue.AttackType.Throw:
-                animator.SetTrigger("ThrowTrigger");
-                Debug.Log("Throw");
+                triggerName = "ThrowTrigger";
                 break;
 
             case BossAttackQueue.AttackType.Sweep:
-                animator.SetTrigger("SweepTrigger");
-                Debug.Log("Sweep");
+                triggerName = "SweepTrigger";
                 break;
         }
+
+        // 同时触发两个Animator
+        lowerAnimator.SetTrigger(triggerName);
+        upperAnimator.SetTrigger(triggerName);
     }
 
     // ===== Animation Events =====
 
     /// <summary>
-    /// 入场动画结束（在入场动画最后一帧调用）
+    /// 入场动画结束
     /// </summary>
     public void OnEnterFinished()
     {
