@@ -6,16 +6,23 @@ using System;
 
 public class TPSController : MonoBehaviour
 {
+    [Header("Camera Settings")]
     [SerializeField] private CinemachineVirtualCamera aimVirtualCamera;
     [SerializeField] private float normalSensitivity;
     [SerializeField] private float aimSensitivity;
-
+    
+    [Header("Collision Detect")]
     [SerializeField] private LayerMask aimColliderLayerMask = new LayerMask();
     [SerializeField] private Transform debugTransform;
-
+    
+    [Header("Projectile")]
     [SerializeField] private Transform pfBulletProjectile;
     [SerializeField] private Transform spawnBulletPosition;
 
+    [Header("Aiming UI")]
+    [SerializeField] private GameObject crosshair;
+    
+    // references
     private ThirdPersonController thirdPersonController;
     private StarterAssetsInputs starterAssetsInputs;
     private Animator animator;
@@ -47,6 +54,8 @@ public class TPSController : MonoBehaviour
 
             animator.SetLayerWeight(1, Mathf.Lerp(animator.GetLayerWeight(1), 1f, Time.deltaTime * 10f));
 
+            crosshair.SetActive(true);
+
             Vector3 worldAimTarget = mouseWorldPosition; 
             worldAimTarget.y = transform.position.y;
             Vector3 aimDirection = (worldAimTarget - transform.position).normalized;
@@ -60,6 +69,8 @@ public class TPSController : MonoBehaviour
             thirdPersonController.SetRotateOnMove(true);
 
             animator.SetLayerWeight(1, Mathf.Lerp(animator.GetLayerWeight(1), 0f, Time.deltaTime * 10f));
+            
+            crosshair.SetActive(false);
         }
 
         if (starterAssetsInputs.shoot)

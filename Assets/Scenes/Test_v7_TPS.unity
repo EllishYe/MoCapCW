@@ -8500,7 +8500,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1055737190
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8833,6 +8833,7 @@ MonoBehaviour:
   debugTransform: {fileID: 782746543}
   pfBulletProjectile: {fileID: 6863857337172796870, guid: 1253a595be1966b4a9351a41dbf56009, type: 3}
   spawnBulletPosition: {fileID: 37183192}
+  crosshair: {fileID: 1055737189}
 --- !u!4 &1160209510 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8512837311202927092, guid: fec0136d3f45f734997cd24826d857a4, type: 3}
