@@ -27,6 +27,7 @@ namespace StarterAssets
 
         [Tooltip("Acceleration and deceleration")]
         public float SpeedChangeRate = 10.0f;
+        public float Sensitivity = 1f;// mouse sensitivity
 
         public AudioClip LandingAudioClip;
         public AudioClip[] FootstepAudioClips;
@@ -198,8 +199,8 @@ namespace StarterAssets
                 //Don't multiply mouse input by Time.deltaTime;
                 float deltaTimeMultiplier = IsCurrentDeviceMouse ? 1.0f : Time.deltaTime;
 
-                _cinemachineTargetYaw += _input.look.x * deltaTimeMultiplier;
-                _cinemachineTargetPitch += _input.look.y * deltaTimeMultiplier;
+                _cinemachineTargetYaw += _input.look.x * deltaTimeMultiplier*Sensitivity;
+                _cinemachineTargetPitch += _input.look.y * deltaTimeMultiplier*Sensitivity;
             }
 
             // clamp our rotations so our values are limited 360 degrees
@@ -392,6 +393,11 @@ namespace StarterAssets
         public bool IsGrounded()
         {
             return Grounded;
+        }
+
+        public void SetSensitivity(float newsensitivity)
+        {
+            Sensitivity = newsensitivity;
         }
     }
 }
