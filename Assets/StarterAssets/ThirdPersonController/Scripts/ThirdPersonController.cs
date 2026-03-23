@@ -27,7 +27,6 @@ namespace StarterAssets
 
         [Tooltip("Acceleration and deceleration")]
         public float SpeedChangeRate = 10.0f;
-        public float Sensitivity = 1f;
 
         public AudioClip LandingAudioClip;
         public AudioClip[] FootstepAudioClips;
@@ -98,7 +97,6 @@ namespace StarterAssets
         private int _animIDJump;
         private int _animIDFreeFall;
         private int _animIDMotionSpeed;
-        private bool _rotateOnMove = true;
 
 #if ENABLE_INPUT_SYSTEM 
         private PlayerInput _playerInput;
@@ -263,10 +261,7 @@ namespace StarterAssets
                     RotationSmoothTime);
 
                 // rotate to face input direction relative to camera position
-                if (_rotateOnMove)
-                {
-                    transform.rotation = Quaternion.Euler(0.0f, rotation, 0.0f);
-                }
+                transform.rotation = Quaternion.Euler(0.0f, rotation, 0.0f);
             }
 
 
@@ -397,16 +392,6 @@ namespace StarterAssets
         public bool IsGrounded()
         {
             return Grounded;
-        }
-
-        public void SetSensitivity(float newSensitivity)
-        {
-            Sensitivity = newSensitivity;
-        }
-
-        public void SetRotateOnMove(bool newRotateOnMove)
-        {
-            _rotateOnMove = newRotateOnMove;
         }
     }
 }
