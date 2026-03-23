@@ -1,9 +1,13 @@
 using UnityEngine;
 
-public class BossInputKeyTest : MonoBehaviour
+public class BossInput : MonoBehaviour
 {
-    public Animator BossAnimator;
+    [Header("Reference")]
+    public BossAI bossAI;
+
+    [Header("Keys")]
     private KeyCode EnterKey = KeyCode.F12;
+
     private KeyCode PatKey = KeyCode.F1;
     private KeyCode ThrowKey = KeyCode.F2;
     private KeyCode SweepKey = KeyCode.F3;
@@ -12,42 +16,48 @@ public class BossInputKeyTest : MonoBehaviour
     private KeyCode ArmFallRKey = KeyCode.F6;
     private KeyCode DieKey = KeyCode.F7;
 
-
     void Update()
     {
+        if (bossAI == null) return;
+
         if (Input.GetKeyDown(EnterKey))
         {
-            BossAnimator.SetBool("IsEntered", true);
+            bossAI.EnterBoss();
         }
+
         if (Input.GetKeyDown(PatKey))
         {
-            BossAnimator.SetTrigger("PatTrigger");
+            bossAI.PlayPat();
         }
+
         if (Input.GetKeyDown(ThrowKey))
         {
-            BossAnimator.SetTrigger("ThrowTrigger");
+            bossAI.PlayThrow();
         }
+
         if (Input.GetKeyDown(SweepKey))
         {
-            BossAnimator.SetTrigger("SweepTrigger");
+            bossAI.PlaySweep();
         }
+
         if (Input.GetKeyDown(HurtKey))
         {
-            BossAnimator.SetTrigger("HurtTrigger");
+            bossAI.TriggerHurt();
         }
+
         if (Input.GetKeyDown(ArmFallLKey))
         {
-            BossAnimator.SetTrigger("ArmFallLTrigger");
+            bossAI.PlayArmFallL();
         }
+
         if (Input.GetKeyDown(ArmFallRKey))
         {
-            BossAnimator.SetTrigger("ArmFallRTrigger");
+            bossAI.PlayArmFallR();
         }
+
         if (Input.GetKeyDown(DieKey))
         {
-            BossAnimator.SetTrigger("DieTrigger");
+            bossAI.TriggerDie();
         }
-
-
     }
 }
