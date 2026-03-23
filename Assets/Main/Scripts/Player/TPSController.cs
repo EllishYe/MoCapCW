@@ -73,7 +73,7 @@ public class TPSController : MonoBehaviour
             crosshair.SetActive(false);
         }
 
-        if (starterAssetsInputs.shoot)
+        if (starterAssetsInputs.shoot && starterAssetsInputs.aim)
         {
             //shoot bullet towards mouseWorldPosition
             Vector3 aimDir = (mouseWorldPosition - spawnBulletPosition.position).normalized;
