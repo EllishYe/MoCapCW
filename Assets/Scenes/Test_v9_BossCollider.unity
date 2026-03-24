@@ -683,6 +683,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BossAnimationEventRelay
   bossAI: {fileID: 292211896}
   bossAttackController: {fileID: 292211899}
+  bossHealth: {fileID: 1414887596}
 --- !u!4 &140492337 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -1257176305362182314, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
@@ -11610,10 +11611,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86a2c1f158b47b949b0ca9d643a385da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossHealth
-  maxHealth: 600
+  maxHealth: 900
   currentHealth: 0
   phase: 0
   bossHealthBar: {fileID: 1787560218}
+  bossAI: {fileID: 292211896}
 --- !u!1001 &1421036782
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15868,10 +15870,10 @@ RectTransform:
   - {fileID: 305673532}
   m_Father: {fileID: 597571645}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 20}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 200, y: -20}
+  m_SizeDelta: {x: 300, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1787560218
 MonoBehaviour:
@@ -17252,9 +17254,9 @@ SceneRoots:
   - {fileID: 743702525}
   - {fileID: 1414887595}
   - {fileID: 100052289}
-  - {fileID: 1126172139}
   - {fileID: 1528514683}
   - {fileID: 782746543}
   - {fileID: 2126311923}
   - {fileID: 875719781}
+  - {fileID: 1126172139}
   - {fileID: 597571645}
