@@ -1,18 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+// 简单的 BulletTarget 占位类
 public class BulletTarget : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [Header("Body Part Type")]
+    public BossBodyPartType partType = BossBodyPartType.Body;
 
-    // Update is called once per frame
-    void Update()
+    private BossHealth bossHealth;
+
+    void Awake()
     {
-        
+        bossHealth = GetComponentInParent<BossHealth>();
+    }
+    public bool TakeHit(float damage)
+    {
+        if (bossHealth == null)
+        {
+            Debug.LogWarning("No BossHealth found!");
+            return false;
+        }
+
+        return bossHealth.TakeDamage(damage, partType);
     }
 }

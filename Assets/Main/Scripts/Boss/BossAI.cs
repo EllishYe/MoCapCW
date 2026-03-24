@@ -1,6 +1,9 @@
 using System.Collections;
 using UnityEngine;
 
+/// <summary>
+/// 动作指令AI，负责根据状态机和攻击队列控制Boss的攻击节奏和动画触发
+/// </summary>
 public class BossAI : MonoBehaviour
 {
     [Header("References")]

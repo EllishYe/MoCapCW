@@ -4,6 +4,8 @@ public class BossAnimationEventRelay : MonoBehaviour
 {
     public BossAI bossAI;
     public BossAttackController bossAttackController;
+    public BossHealth bossHealth;
+    public ArmDisapper armDisapper;
 
     public void OnEnterFinished()
     {
@@ -42,4 +44,43 @@ public class BossAnimationEventRelay : MonoBehaviour
 
 
     #endregion
+
+    #region IsInvulnerable
+
+    public void OnArmfallRightStart()
+    {
+        bossHealth.EnterInvulnerable();
+    }
+    public void OnArmfallRightFinished()
+    {
+        bossHealth.ExitInvulnerable();
+        bossHealth.EnterNextPhase();
+    }
+    public void OnArmfallLeftStart()
+    {
+        bossHealth.EnterInvulnerable();
+    }
+    public void OnArmfallLeftFinished()
+    {
+        bossHealth.ExitInvulnerable();
+        bossHealth.EnterNextPhase();
+    }
+
+    #endregion
+
+    #region Arm Disappear
+
+    public void RightArmDisappear()
+    {
+        armDisapper.PlayDisappearRight();
+        bossAttackController.OnLeftArmDisappear();
+    }
+    public void LeftArmDisappear()
+    {
+        armDisapper.PlayDisappearLeft();
+        bossAttackController.OnRightArmDisappear();
+    }
+
+    #endregion
+
 }
