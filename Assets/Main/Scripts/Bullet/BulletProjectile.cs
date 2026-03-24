@@ -19,13 +19,39 @@ public class BulletProjectile : MonoBehaviour {
     }
 
     private void OnTriggerEnter(Collider other) {
-        if (other.GetComponent<BulletTarget>() != null) {
-            // Hit target
-            Instantiate(vfxHitGreen, transform.position, Quaternion.identity);
-        } else {
-            // Hit something else
-            Instantiate(vfxHitRed, transform.position, Quaternion.identity);
+
+        //if (other.GetComponent<BulletTarget>() != null) {
+        //    // Hit target
+        //    Instantiate(vfxHitGreen, transform.position, Quaternion.identity);
+        //} else {
+        //    // Hit something else
+        //    Instantiate(vfxHitRed, transform.position, Quaternion.identity);
+        //}
+        //Destroy(gameObject);
+
+        BulletTarget target = other.GetComponent<BulletTarget>();
+
+        if (target != null)
+        {
+            bool isValidHit = target.TakeHit(10f);
+
+            if (isValidHit)
+            {
+                // Make Damage at the right part ->Red
+                Instantiate(vfxHitRed, transform.position, Quaternion.identity);
+            }
+            else
+            {
+                // Make Hit at the wrong part ->Green
+                Instantiate(vfxHitGreen, transform.position, Quaternion.identity);
+            }
         }
+        else
+        {
+            // Hit sth else ->Green
+            Instantiate(vfxHitGreen, transform.position, Quaternion.identity);
+        }
+
         Destroy(gameObject);
     }
 
