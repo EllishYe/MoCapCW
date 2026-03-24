@@ -10,13 +10,26 @@ public class BossHealth : MonoBehaviour
 
     public BossPhase phase = BossPhase.Phase1;
 
+    [SerializeField] HealthBar bossHealthBar;
+
     //public BossState currentState;
 
     //private BossStateController stateController;
 
+    
+
     void Start()
     {
         currentHealth = maxHealth;
+
+        if (bossHealthBar != null)
+        {
+            bossHealthBar.UpdateHealthBar(currentHealth, maxHealth);
+        }
+        else {
+            Debug.LogWarning("BossHealthBar ref is missing");
+        }
+        
         //stateController = GetComponent<BossStateController>();
     }
 
@@ -31,6 +44,7 @@ public class BossHealth : MonoBehaviour
 
         currentHealth -= damage;
         Debug.Log("Boss HP: " + currentHealth);
+        bossHealthBar.UpdateHealthBar(currentHealth, maxHealth);
 
         //CheckPhase1Events();
         return true;
