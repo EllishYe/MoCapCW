@@ -73,10 +73,12 @@ public class BossAnimationEventRelay : MonoBehaviour
     public void RightArmDisappear()
     {
         armDisapper.PlayDisappearRight();
+        bossAttackController.OnLeftArmDisappear();
     }
     public void LeftArmDisappear()
     {
         armDisapper.PlayDisappearLeft();
+        bossAttackController.OnRightArmDisappear();
     }
 
     #endregion

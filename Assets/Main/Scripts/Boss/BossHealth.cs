@@ -22,6 +22,7 @@ public class BossHealth : MonoBehaviour
     private bool hasTriggeredArmFall = false;
 
     bool isInvulnerable = false;
+    
 
     // Phase-specific valid body parts
     private List<BossBodyPartType> validParts = new List<BossBodyPartType>();
@@ -113,7 +114,7 @@ public class BossHealth : MonoBehaviour
         if (!hasTriggeredArmFall && hpRatio <= 2f / 6f)
         {
             hasTriggeredArmFall = true;
-            bossAI.PlayArmFallR();
+            bossAI.PlayArmFallL();
             Debug.Log("2/6 Boss ArmfallR");
         }
     }
