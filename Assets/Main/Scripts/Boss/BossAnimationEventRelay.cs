@@ -53,6 +53,7 @@ public class BossAnimationEventRelay : MonoBehaviour
     public void OnArmfallRightFinished()
     {
         bossHealth.ExitInvulnerable();
+        bossHealth.EnterNextPhase();
     }
     public void OnArmfallLeftStart()
     {
@@ -61,6 +62,7 @@ public class BossAnimationEventRelay : MonoBehaviour
     public void OnArmfallLeftFinished()
     {
         bossHealth.ExitInvulnerable();
+        bossHealth.EnterNextPhase();
     }
 
     #endregion
