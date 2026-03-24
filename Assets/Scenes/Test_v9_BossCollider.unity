@@ -11630,6 +11630,7 @@ MonoBehaviour:
   phase: 0
   bossHealthBar: {fileID: 1787560218}
   bossAI: {fileID: 292211896}
+  screenController: {fileID: 147424857}
 --- !u!1001 &1421036782
 PrefabInstance:
   m_ObjectHideFlags: 0

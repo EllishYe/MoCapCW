@@ -22,10 +22,41 @@ public class BossHealth : MonoBehaviour
     private bool hasTriggeredArmFall = false;
 
     bool isInvulnerable = false;
-    
 
     // Phase-specific valid body parts
     private List<BossBodyPartType> validParts = new List<BossBodyPartType>();
+
+    // Phase3 Stun Control
+    //private bool isPhase3Stunned = false;
+    private int phase3Stage = 0; // 0=A, 1=B, 2=C
+    public ScreenStateController screenController;
+
+    void Update()
+    {
+        if (phase == BossPhase.Phase3)
+        {
+            HandlePhase3Input();
+        }
+    }
+
+    void HandlePhase3Input()
+    {
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            TriggerButtonA();
+        }
+
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            TriggerButtonB();
+        }
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            TriggerButtonC();
+        }
+    }
+
 
     void Start()
     {
@@ -44,12 +75,16 @@ public class BossHealth : MonoBehaviour
 
     public bool TakeDamage(float damage, BossBodyPartType part)
     {
+
+        if (phase == BossPhase.Phase3)
+            return false;
+        
         if (isInvulnerable)
         {
             return false; 
         }
 
-        // No harm senario
+        // no harm if hit invalid part
         if (validParts.Count > 0 && !validParts.Contains(part))
         {
             return false;
@@ -189,5 +224,61 @@ public class BossHealth : MonoBehaviour
         isInvulnerable = false;
         Debug.Log("Exit Invulnerable");
     }
+    #endregion
+
+
+    #region Phase3 Control
+
+    void TriggerButtonA()
+    {
+        if (phase3Stage != 0) return;
+
+        Debug.Log("Button A triggered");
+        
+        bossAI.TriggerHurt();
+
+        // 血量直接压到 2/9
+        currentHealth = maxHealth * (2f / 9f);
+        bossHealthBar.UpdateHealthBar(currentHealth, maxHealth);
+
+        // 电视机关一组
+        screenController.ToggleGroup(0);
+
+        // 切换按钮（可能要写逻辑）
+        phase3Stage = 1;
+    }
+
+    void TriggerButtonB()
+    {
+        if (phase3Stage != 1) return;
+
+        Debug.Log("Button B triggered");
+        
+        bossAI.TriggerHurt();
+
+        currentHealth = maxHealth * (1f / 9f);
+        bossHealthBar.UpdateHealthBar(currentHealth, maxHealth);
+
+        screenController.ToggleGroup(1);
+
+        phase3Stage = 2;
+    }
+
+    void TriggerButtonC()
+    {
+        if (phase3Stage != 2) return;
+        Debug.Log("Button C triggered");
+        bossAI.TriggerDie();
+
+        currentHealth = 0f;
+        bossHealthBar.UpdateHealthBar(currentHealth, maxHealth);
+
+        screenController.ToggleGroup(2);
+
+        phase3Stage = 3;
+    }
+
+
+    
     #endregion
 }

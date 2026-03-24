@@ -27,7 +27,7 @@ public class ScreenStateController : MonoBehaviour
         }
     }
 
-    private void ToggleGroup(int groupIndex)
+    public void ToggleGroup(int groupIndex)//暂时打开成public，方便BossHealth调用
     {
         groupStates[groupIndex] = !groupStates[groupIndex];
         ApplyGroupState(groupIndex);
