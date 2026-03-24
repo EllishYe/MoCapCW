@@ -684,6 +684,7 @@ MonoBehaviour:
   bossAI: {fileID: 292211896}
   bossAttackController: {fileID: 292211899}
   bossHealth: {fileID: 1414887596}
+  armDisapper: {fileID: 1516268888}
 --- !u!4 &140492337 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -1257176305362182314, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
@@ -5437,7 +5438,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29bc780c42e66464aac1b45488b0270d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ArmDisapper
-  armMesh: {fileID: 1393224445}
+  leftArmMesh: {fileID: 0}
+  rightArmMesh: {fileID: 0}
+  leftArmColliders: []
+  rightArmColliders: []
 --- !u!4 &621066474
 Transform:
   m_ObjectHideFlags: 0
@@ -6646,6 +6650,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BulletTarget
   partType: 0
+--- !u!1 &1025104648 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1345424563760662171, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
+  m_PrefabInstance: {fileID: 1373138395}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1027350693
 GameObject:
   m_ObjectHideFlags: 0
@@ -10557,6 +10566,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -1994256494588717004, guid: fec0136d3f45f734997cd24826d857a4, type: 3}
   m_PrefabInstance: {fileID: 51433798}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1171209064 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7223931534892947987, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
+  m_PrefabInstance: {fileID: 1373138395}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1174692489 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7366611164969179715, guid: fec0136d3f45f734997cd24826d857a4, type: 3}
@@ -11434,7 +11448,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7662482939803226389, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1331793837}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1516268888}
   m_SourcePrefab: {fileID: 100100000, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
 --- !u!4 &1375474180 stripped
 Transform:
@@ -13693,6 +13710,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BulletTarget
   partType: 2
+--- !u!1 &1484692132 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
+  m_PrefabInstance: {fileID: 1373138395}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1489190066
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14305,6 +14327,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4edcedd09ea5acc4b9bd2df6add00438, type: 3}
   m_PrefabInstance: {fileID: 1373138395}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1516268888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484692132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29bc780c42e66464aac1b45488b0270d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ArmDisapper
+  leftArmMesh: {fileID: 1171209064}
+  rightArmMesh: {fileID: 1025104648}
+  leftArmColliders:
+  - {fileID: 1027350695}
+  - {fileID: 1762314250}
+  - {fileID: 436858361}
+  rightArmColliders:
+  - {fileID: 1279633988}
+  - {fileID: 1470930172}
+  - {fileID: 1391566074}
 --- !u!1 &1528514680
 GameObject:
   m_ObjectHideFlags: 0

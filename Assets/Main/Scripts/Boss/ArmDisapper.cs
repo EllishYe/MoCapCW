@@ -3,30 +3,50 @@ using System.Collections;
 
 public class ArmDisapper : MonoBehaviour
 {
-    public GameObject armMesh;
+    [Header("Meshes")]
+    public GameObject leftArmMesh;
+    public GameObject rightArmMesh;
 
+    [Header("Colliders")]
+    public Collider[] leftArmColliders;
+    public Collider[] rightArmColliders;
 
-    public void Start()
+    public void PlayDisappearLeft()
     {
-        PlayDisappear();
+        DisableColliders(leftArmColliders);
+        StartCoroutine(FlashAndDisable(leftArmMesh));
     }
 
-    public void PlayDisappear()
+    public void PlayDisappearRight()
     {
-        StartCoroutine(FlashAndDisable());
+        DisableColliders(rightArmColliders);
+        StartCoroutine(FlashAndDisable(rightArmMesh));
     }
 
-    IEnumerator FlashAndDisable()
+    void DisableColliders(Collider[] colliders)
     {
+        foreach (Collider col in colliders)
+        {
+            if (col != null)
+            {
+                col.enabled = false;
+            }
+        }
+    }
+
+    IEnumerator FlashAndDisable(GameObject targetMesh)
+    {
+        if (targetMesh == null) yield break;
+
         for (int i = 0; i < 5; i++)
         {
-            armMesh.SetActive(false);
+            targetMesh.SetActive(false);
             yield return new WaitForSeconds(0.1f);
 
-            armMesh.SetActive(true);
+            targetMesh.SetActive(true);
             yield return new WaitForSeconds(0.1f);
         }
 
-        armMesh.SetActive(false);
+        targetMesh.SetActive(false);
     }
 }
