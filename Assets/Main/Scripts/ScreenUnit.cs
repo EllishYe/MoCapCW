@@ -1,20 +1,25 @@
-using UnityEngine;
+ï»¿using UnityEngine;
+
 
 public class ScreenUnit : MonoBehaviour
 {
+    //[Header("Materials")]
+    //[SerializeField] private Material onMaterial;
+    //[SerializeField] private Material offMaterial;
+
     [Header("Renderer Reference")]
     [SerializeField] private Renderer screenRenderer;
 
     [Header("Visual State")]
-    [SerializeField] private Color inactiveColor = Color.black; // ¿ÉÔÚ Inspector ĞŞ¸Ä
+    [SerializeField] private Color inactiveColor = Color.black; // å¯åœ¨ Inspector ä¿®æ”¹
     private Color activeColor = Color.white;
 
     private MaterialPropertyBlock propertyBlock;
 
-    // ·Ö×é id£¬ÓÉ ScreenGenerator Ëæ»ú·ÖÅä
+    // åˆ†ç»„ idï¼Œç”± ScreenGenerator éšæœºåˆ†é…
     public int GroupId { get; set; }
 
-    // µ±Ç°¿ª¹Ø×´Ì¬
+    // å½“å‰å¼€å…³çŠ¶æ€
     public bool IsOn { get; private set; } = true;
 
     private void Awake()
@@ -26,11 +31,11 @@ public class ScreenUnit : MonoBehaviour
 
         propertyBlock = new MaterialPropertyBlock();
 
-        // ³õÊ¼»¯ visual Îª activeColor£¨±£Ö¤ÔËĞĞÊ±ÓĞÕıÈ·ÑÕÉ«£©
+        // åˆå§‹åŒ– visual ä¸º activeColorï¼ˆä¿è¯è¿è¡Œæ—¶æœ‰æ­£ç¡®é¢œè‰²ï¼‰
         ApplyColor(IsOn ? activeColor : inactiveColor);
     }
 
-    // Íâ²¿ÓÃÓÚÉèÖÃ¡¸¿ªÆôÊ±µÄÑÕÉ«¡¹£¬ScreenColorController »áµ÷ÓÃ´Ë·½·¨
+    // å¤–éƒ¨ç”¨äºè®¾ç½®ã€Œå¼€å¯æ—¶çš„é¢œè‰²ã€ï¼ŒScreenColorController ä¼šè°ƒç”¨æ­¤æ–¹æ³•
     public void SetColor(Color color)
     {
         activeColor = color;
@@ -40,22 +45,38 @@ public class ScreenUnit : MonoBehaviour
         }
     }
 
-    // ÇĞ»»ÊÓ¾õÉÏµÄ¿ª/¹Ø£¨½ö¸Ä±äÏÔÊ¾ÑÕÉ«£©
+    // åˆ‡æ¢è§†è§‰ä¸Šçš„å¼€/å…³ï¼ˆä»…æ”¹å˜æ˜¾ç¤ºé¢œè‰²ï¼‰
     public void SetEnabled(bool on)
     {
         if (IsOn == on) return;
         IsOn = on;
         ApplyColor(IsOn ? activeColor : inactiveColor);
+
+        if (IsOn == on) return;
+
+        //IsOn = on;
+
+        //// ğŸ”¥ åˆ‡æ¢æè´¨
+        //if (screenRenderer != null)
+        //{
+        //    screenRenderer.material = IsOn ? onMaterial : offMaterial;
+        //}
+
+        //// å¦‚æœå¼€å¯çŠ¶æ€ï¼Œè¿˜å¯ä»¥åŒæ­¥é¢œè‰²
+        //if (IsOn)
+        //{
+        //    ApplyColor(activeColor);
+        //}
     }
 
-    // ÄÚ²¿£ºÍ¨¹ı MaterialPropertyBlock Ğ´ÈëÑÕÉ«µ½ renderer£¨²»ÊµÀı»¯²ÄÖÊ£©
+    // å†…éƒ¨ï¼šé€šè¿‡ MaterialPropertyBlock å†™å…¥é¢œè‰²åˆ° rendererï¼ˆä¸å®ä¾‹åŒ–æè´¨ï¼‰
     private void ApplyColor(Color color)
     {
         if (screenRenderer == null) return;
 
         screenRenderer.GetPropertyBlock(propertyBlock);
 
-        // ³¢ÊÔ³£¼ûÊôĞÔÃû£¨¼æÈİ²»Í¬ shader£©
+        // å°è¯•å¸¸è§å±æ€§åï¼ˆå…¼å®¹ä¸åŒ shaderï¼‰
         if (screenRenderer.sharedMaterial != null && screenRenderer.sharedMaterial.HasProperty("_BaseColor"))
         {
             propertyBlock.SetColor("_BaseColor", color);

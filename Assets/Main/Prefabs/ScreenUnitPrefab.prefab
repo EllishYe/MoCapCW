@@ -104,6 +104,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bae2b147233a0a543a2f995db01554cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScreenUnit
+  onMaterial: {fileID: 2100000, guid: d8129bcb4402c2b4485e55e2d0e948cd, type: 2}
+  offMaterial: {fileID: 2100000, guid: d6f54943064fb6542a9f1bf6e3b382e6, type: 2}
   screenRenderer: {fileID: 0}
   inactiveColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!65 &4584759225117346606
