@@ -83,4 +83,12 @@ public class BossAnimationEventRelay : MonoBehaviour
 
     #endregion
 
+    #region Animation Events for Sweep
+
+    public void OnSweepHit() {
+        bossAttackController.OnSweepHit();
+    }
+
+    #endregion
+
 }

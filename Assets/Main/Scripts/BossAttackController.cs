@@ -3,9 +3,14 @@ using UnityEngine;
 
 public class BossAttackController : MonoBehaviour
 {
+    //Pat Attack
     public Transform pat_leftHandPoint;
     public Transform pat_rightHandPoint;
     public GameObject pat_shockwavePrefab;
+
+    //Sweep Attack
+    public Transform sweep_SpawnPoint;
+    public GameObject sweep_Prefab;
 
     // Is Lower Arm Alive
     private bool isLeftArmAlive = true;
@@ -35,5 +40,9 @@ public class BossAttackController : MonoBehaviour
     public void OnLeftArmDisappear()
     {
         isLeftArmAlive = false;
+    }
+    public void OnSweepHit()
+    {
+        Instantiate(sweep_Prefab, sweep_SpawnPoint.position, sweep_SpawnPoint.rotation);
     }
 }
