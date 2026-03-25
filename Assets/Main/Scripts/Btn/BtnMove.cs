@@ -3,6 +3,8 @@ using System.Collections;
 
 public class BtnMove : MonoBehaviour
 {
+    public ButtonType buttonType;
+
     [Header("Object 1 (Down)")]
     public Transform object1;
 
@@ -25,10 +27,10 @@ public class BtnMove : MonoBehaviour
 
     private Coroutine moveCoroutine;
 
-    private void Start()
-    {
-        PlayMove();
-    }
+    //private void Start()
+    //{
+    //    PlayMove();
+    //}
 
     // ⭐ 总入口
     public void PlayMove()
@@ -109,4 +111,14 @@ public class BtnMove : MonoBehaviour
 
         object3.position = end;
     }
+
+
+    public enum ButtonType
+    {
+        A,
+        B,
+        C
+    }
+
+    
 }

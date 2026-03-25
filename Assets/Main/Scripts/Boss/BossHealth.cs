@@ -15,7 +15,10 @@ public class BossHealth : MonoBehaviour
 
     [Header("References")]
     public BossAI bossAI;
-
+    [Header("Phase3 Buttons")]
+    public BtnMove buttonA;
+    public BtnMove buttonB;
+    public BtnMove buttonC;
 
     // Blood Control
     private bool hasTriggeredHurt = false;
@@ -31,31 +34,31 @@ public class BossHealth : MonoBehaviour
     private int phase3Stage = 0; // 0=A, 1=B, 2=C
     public ScreenStateController screenController;
 
-    void Update()
-    {
-        if (phase == BossPhase.Phase3)
-        {
-            HandlePhase3Input();
-        }
-    }
+    //void Update()
+    //{
+    //    if (phase == BossPhase.Phase3)
+    //    {
+    //        HandlePhase3Input();
+    //    }
+    //}
 
-    void HandlePhase3Input()
-    {
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            TriggerButtonA();
-        }
+    //void HandlePhase3Input()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.I))
+    //    {
+    //        TriggerButtonA();
+    //    }
 
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            TriggerButtonB();
-        }
+    //    if (Input.GetKeyDown(KeyCode.O))
+    //    {
+    //        TriggerButtonB();
+    //    }
 
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            TriggerButtonC();
-        }
-    }
+    //    if (Input.GetKeyDown(KeyCode.P))
+    //    {
+    //        TriggerButtonC();
+    //    }
+    //}
 
 
     void Start()
@@ -172,6 +175,7 @@ public class BossHealth : MonoBehaviour
 
             case BossPhase.Phase2:
                 nextPhase = BossPhase.Phase3;
+                InitPhase3();
                 break;
 
             case BossPhase.Phase3:
@@ -229,7 +233,7 @@ public class BossHealth : MonoBehaviour
 
     #region Phase3 Control
 
-    void TriggerButtonA()
+    public void TriggerButtonA()
     {
         //Button A Btn press event
         if (phase3Stage != 0) return;
@@ -247,10 +251,15 @@ public class BossHealth : MonoBehaviour
 
         // 切换按钮（可能要写逻辑）
         phase3Stage = 1;
-        
+        if (buttonB != null)
+        {
+            buttonB.gameObject.SetActive(true);
+            buttonB.PlayMove();
+        }
+
     }
 
-    void TriggerButtonB()
+    public void TriggerButtonB()
     {
         if (phase3Stage != 1) return;
 
@@ -264,9 +273,14 @@ public class BossHealth : MonoBehaviour
         screenController.ToggleGroup(1);
 
         phase3Stage = 2;
+        if (buttonC != null)
+        {
+            buttonC.gameObject.SetActive(true);
+            buttonC.PlayMove();
+        }
     }
 
-    void TriggerButtonC()
+    public void TriggerButtonC()
     {
         if (phase3Stage != 2) return;
         Debug.Log("Button C triggered");
@@ -280,7 +294,20 @@ public class BossHealth : MonoBehaviour
         phase3Stage = 3;
     }
 
+    void InitPhase3()
+    {
+        phase3Stage = 0;
 
-    
+        // 只让 A 出现
+        if (buttonA != null)
+            buttonA.PlayMove();
+
+        if (buttonB != null)
+            buttonB.gameObject.SetActive(false);
+
+        if (buttonC != null)
+            buttonC.gameObject.SetActive(false);
+    }
+
     #endregion
 }

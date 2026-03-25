@@ -17,23 +17,38 @@ public class BulletTarget : MonoBehaviour
     }
     public bool TakeHit(float damage)
     {
-        if (bossHealth == null)
-        {
-            Debug.LogWarning("No BossHealth found!");
-            if (partType == BossBodyPartType.Btn)
-            {
-                btnMove?.PlayBtnPressed();
-                return true;
-            }
-            return false;
-        }
-
         // Btn return true but not take damage
         if (partType == BossBodyPartType.Btn)
         {
             //bossHealth.TakeDamage(damage, partType); 
             btnMove?.PlayBtnPressed();
+            switch (btnMove.buttonType)
+            {
+                case BtnMove.ButtonType.A:
+                    bossHealth.TriggerButtonA();
+                    break;
+
+                case BtnMove.ButtonType.B:
+                    bossHealth.TriggerButtonB();
+                    break;
+
+                case BtnMove.ButtonType.C:
+                    bossHealth.TriggerButtonC();
+                    break;
+            }
             return true;
+        }
+
+        if (bossHealth == null)
+        {
+            Debug.LogWarning("No BossHealth found!");
+            //if (partType == BossBodyPartType.Btn)
+            //{
+            //    btnMove?.PlayBtnPressed();
+                
+            //    return true;
+            //}
+            return false;
         }
 
         return bossHealth.TakeDamage(damage, partType);
