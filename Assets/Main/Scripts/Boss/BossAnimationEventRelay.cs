@@ -91,4 +91,18 @@ public class BossAnimationEventRelay : MonoBehaviour
 
     #endregion
 
+    #region Animation Events for Throw
+
+
+    public void OnSpawnBall()
+    {
+        bossAttackController.SpawnEnergyBall();
+    }
+    public void OnThrowBall()
+    {
+        bossAttackController.ThrowEnergyBall();
+    }
+
+    #endregion
+
 }

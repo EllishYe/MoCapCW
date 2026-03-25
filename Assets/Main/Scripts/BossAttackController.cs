@@ -1,18 +1,30 @@
 using System.Collections.Generic;
+using System.Net;
 using UnityEngine;
 
 public class BossAttackController : MonoBehaviour
 {
     //Pat Attack
+    [Header("Pat Attack")]
     public Transform pat_leftHandPoint;
     public Transform pat_rightHandPoint;
     public GameObject pat_shockwavePrefab;
 
     //Sweep Attack
+    [Header("Sweep Attack")]
     public Transform sweep_SpawnPoint;
     public GameObject sweep_Prefab;
 
+    //Throw Attack
+    [Header("Throw Attack")]
+    public Transform throw_Handpoint;
+    public Transform throw_Floorpoint;
+    public GameObject energyBallPrefab;
+    private GameObject currentBall;
+
+
     // Is Lower Arm Alive
+    [Header("Is Lower Arm Alive")]
     private bool isLeftArmAlive = true;
     private bool isRightArmAlive = true;
 
@@ -44,5 +56,23 @@ public class BossAttackController : MonoBehaviour
     public void OnSweepHit()
     {
         Instantiate(sweep_Prefab, sweep_SpawnPoint.position, sweep_SpawnPoint.rotation);
+    }
+
+    public void SpawnEnergyBall()
+    {
+        currentBall = Instantiate(energyBallPrefab, throw_Handpoint.position, Quaternion.identity);
+        // Make the ball a child of the hand so it moves with it
+        currentBall.transform.SetParent(throw_Handpoint);
+    }
+    public void ThrowEnergyBall()
+    {
+        if (currentBall == null) return;
+
+        currentBall.transform.SetParent(null);
+
+        EnergyBall ball = currentBall.GetComponent<EnergyBall>();
+        ball.Launch(throw_Floorpoint.position);
+
+        currentBall = null;
     }
 }
