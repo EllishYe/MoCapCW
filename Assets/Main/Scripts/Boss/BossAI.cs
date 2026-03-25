@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// 动作指令AI，负责根据状态机和攻击队列控制Boss的攻击节奏和动画触发
@@ -122,8 +123,10 @@ public class BossAI : MonoBehaviour
     /// </summary>
     public void OnDie()
     {
-        isAlive = false;
-        StopAllCoroutines();
+        //isAlive = false;
+        //StopAllCoroutines();
+        //进入下一个场景Outro
+        SceneManager.LoadScene("Outro");
     }
 
     #region Tigger Update
