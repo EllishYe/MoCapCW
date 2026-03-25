@@ -20,5 +20,6 @@ public enum BossBodyPartType
     Body,
     LeftLowerArm,
     RightLowerArm,
-    UpperArm
+    UpperArm,
+    Btn
 }

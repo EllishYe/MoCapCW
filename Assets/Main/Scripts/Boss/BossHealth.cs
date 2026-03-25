@@ -231,6 +231,7 @@ public class BossHealth : MonoBehaviour
 
     void TriggerButtonA()
     {
+        //Button A Btn press event
         if (phase3Stage != 0) return;
 
         Debug.Log("Button A triggered");
@@ -246,6 +247,7 @@ public class BossHealth : MonoBehaviour
 
         // 切换按钮（可能要写逻辑）
         phase3Stage = 1;
+        
     }
 
     void TriggerButtonB()
