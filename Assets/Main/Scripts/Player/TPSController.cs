@@ -22,6 +22,10 @@ public class TPSController : MonoBehaviour
     [Header("Aiming UI")]
     [SerializeField] private GameObject crosshair;
     
+    [Header("Audio")]
+    [SerializeField] private AudioClip shootSfx;
+    [SerializeField] private AudioSource audioSource;
+
     // references
     private ThirdPersonController thirdPersonController;
     private StarterAssetsInputs starterAssetsInputs;
@@ -32,6 +36,17 @@ public class TPSController : MonoBehaviour
         thirdPersonController = GetComponent<ThirdPersonController>();
         starterAssetsInputs = GetComponent<StarterAssetsInputs>();
         animator = GetComponent<Animator>();
+
+        // 尝试获取或创建 AudioSource（方便在没有手动添加时也能播放）
+        if (audioSource == null)
+        {
+            audioSource = GetComponent<AudioSource>();
+            if (audioSource == null)
+            {
+                audioSource = gameObject.AddComponent<AudioSource>();
+                audioSource.playOnAwake = false;
+            }
+        }
     }
 
     private void Update()
@@ -78,6 +93,16 @@ public class TPSController : MonoBehaviour
             //shoot bullet towards mouseWorldPosition
             Vector3 aimDir = (mouseWorldPosition - spawnBulletPosition.position).normalized;
             Instantiate(pfBulletProjectile, spawnBulletPosition.position, Quaternion.LookRotation(aimDir,Vector3.up));
+
+            // 播放开枪音效（优先使用绑定的 AudioSource，否则使用 PlayClipAtPoint）
+            if (shootSfx != null)
+            {
+                if (audioSource != null)
+                    audioSource.PlayOneShot(shootSfx);
+                else
+                    AudioSource.PlayClipAtPoint(shootSfx, spawnBulletPosition.position);
+            }
+
             starterAssetsInputs.shoot = false;
         }
     }
