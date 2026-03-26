@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class EnergyBall : MonoBehaviour
 {
-    public float speed = 10f;
+    public float speed = 20f;
     public GameObject bombPrefab;
 
     private Vector3 targetPos;

@@ -17,7 +17,11 @@ public class BossAttackController : MonoBehaviour
 
     //Throw Attack
     [Header("Throw Attack")]
-    public Transform throw_Handpoint;
+    public Transform leftHandPoint;
+    public Transform rightHandPoint;
+    public Transform ballAnchor;
+
+    //public Transform throw_Handpoint;
     public Transform throw_Floorpoint;
     public GameObject energyBallPrefab;
     private GameObject currentBall;
@@ -27,6 +31,14 @@ public class BossAttackController : MonoBehaviour
     [Header("Is Lower Arm Alive")]
     private bool isLeftArmAlive = true;
     private bool isRightArmAlive = true;
+
+    private void Update()
+    {
+        if (ballAnchor != null)
+        {
+            ballAnchor.position = (leftHandPoint.position + rightHandPoint.position) / 2f;
+        }
+    }
 
     public void OnPatHit(int handIndex)
     {
@@ -60,9 +72,14 @@ public class BossAttackController : MonoBehaviour
 
     public void SpawnEnergyBall()
     {
-        currentBall = Instantiate(energyBallPrefab, throw_Handpoint.position, Quaternion.identity);
-        // Make the ball a child of the hand so it moves with it
-        currentBall.transform.SetParent(throw_Handpoint);
+        //currentBall = Instantiate(energyBallPrefab, throw_Handpoint.position, Quaternion.identity);
+        //// Make the ball a child of the hand so it moves with it
+        //currentBall.transform.SetParent(throw_Handpoint);
+        //Vector3 midPoint = (leftHandPoint.position + rightHandPoint.position) / 2f;
+        //currentBall = Instantiate(energyBallPrefab, midPoint, Quaternion.identity);
+        //currentBall.transform.SetParent(rightHandPoint, true);
+        currentBall = Instantiate(energyBallPrefab, ballAnchor.position, Quaternion.identity);
+        currentBall.transform.SetParent(ballAnchor);
     }
     public void ThrowEnergyBall()
     {
@@ -74,5 +91,13 @@ public class BossAttackController : MonoBehaviour
         ball.Launch(throw_Floorpoint.position);
 
         currentBall = null;
+    }
+    public void CancelCurrentBall()
+    {
+        if (currentBall != null)
+        {
+            Destroy(currentBall);
+            currentBall = null;
+        }
     }
 }
