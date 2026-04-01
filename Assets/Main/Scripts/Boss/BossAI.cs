@@ -11,6 +11,8 @@ public class BossAI : MonoBehaviour
     public Animator lowerAnimator; // Figure01
     public Animator upperAnimator; // Figure02
     public BossAttackQueue attackQueue;
+    public GameObject outroCanvas;//结束黑屏
+
 
     [Header("Settings")]
     public float attackCooldown = 1.5f;
@@ -126,6 +128,15 @@ public class BossAI : MonoBehaviour
         //isAlive = false;
         //StopAllCoroutines();
         //进入下一个场景Outro
+        
+        if (outroCanvas != null)
+        {
+            outroCanvas.SetActive(true);
+        }
+        else
+        {
+            Debug.LogWarning("Outro Canvas 未设置，请在 BossAI.outroCanvas 中指定 Outro UI GameObject");
+        }
         SceneManager.LoadScene("Outro");
     }
 

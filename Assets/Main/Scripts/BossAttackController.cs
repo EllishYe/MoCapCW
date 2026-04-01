@@ -78,6 +78,12 @@ public class BossAttackController : MonoBehaviour
         //Vector3 midPoint = (leftHandPoint.position + rightHandPoint.position) / 2f;
         //currentBall = Instantiate(energyBallPrefab, midPoint, Quaternion.identity);
         //currentBall.transform.SetParent(rightHandPoint, true);
+        if (currentBall != null)
+        {
+            Destroy(currentBall);
+            currentBall = null;
+        }
+
         currentBall = Instantiate(energyBallPrefab, ballAnchor.position, Quaternion.identity);
         currentBall.transform.SetParent(ballAnchor);
     }

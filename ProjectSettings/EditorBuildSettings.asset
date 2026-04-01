@@ -8,13 +8,13 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Demo_v1_Env.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Intro.unity
     guid: 5c10868dc9233ca449ce9cc58801f2d9
   - enabled: 1
     path: Assets/Scenes/Test_v9_BossCollider.unity
     guid: bfe10de1230cb574fa7d380744c69a84
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Outro.unity
     guid: 1bf29324be3f7ea498e116d132a5918a
   m_configObjects:
